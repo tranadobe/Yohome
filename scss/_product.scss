@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+
+/* -----------------------------------------------------------
+	#page
+----------------------------------------------------------- */
+#page {
+	@include mq(pc_tab) {
+		font-size: 100% !important;
+	}
+}
+.main-container{
+	@extend %bw;
+	@extend %cf;
+}
+.product-item{
+	@include clearfix;
+	@include border-radius(6px);
+	background:$white; 
+	border:1px solid #E1E5EA;
+	@include box-shadow(0px 1px 2px rgba(0, 0, 0, 0.051036));
+	a{
+		display: block;
+		text-decoration: none !important;
+	}
+	.product-images{
+		position: relative;
+		@include clearfix;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			width: 100%;
+			height: 20%;
+			z-index: 1;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%);
+			opacity: 0.1;
+			transform: rotate(-180deg);	
+		}
+		.box-view-control{
+			position: absolute;
+			top: 15px;
+			left: 5%;
+			width: 90%;
+			z-index: 9;
+			.text-left{
+				color: $white;
+				@include fsz(16);
+				vertical-align: baseline;
+			}
+			.text-right{
+				img{
+					vertical-align: baseline;
+					margin-left: 10px;
+				}
+			}
+		}
+		.img-inner img{
+			@include transform(scale(1));
+			@include transition(all .5s ease);
+			width: 100%;
+		}
+		&:hover{
+			.img-inner img{
+				@include transform(scale(1.1));
+			}
+		}
+	}
+	.product-caption{
+		@include cV(padding,15px 20px 20px,10px 10px 20px,15px 20px 20px);
+		h4{
+			font-family: $muli;
+			@include fsz(18);
+			font-weight: bold;
+			color: #1D2C4C;
+			line-height:(26/18);
+		}
+		.pr-add{
+			margin: .5em 0 1.5em;
+			color: #525975;
+		}
+		.list-project{
+			li{
+				display: inline-block;
+				color: #636982;
+				@include cV(padding,0 1em 0 0,0 .5em 0 0,0 1em 0 0);
+				&:not(:first-child) {
+					&:before{
+						content: "";
+						width: 5px;
+						height: 5px;
+						display: inline-block;
+						background:#636982;
+						@include border-radius(50%);
+						margin-right: 5px;
+						vertical-align: baseline;
+					}
+				}
+			}
+			&.list-pro{
+				li{
+					@include cV(padding,0 1.5em 0 0,0 0 .5em 0,0 1em 0 0);
+					img{
+						vertical-align: middle;
+						margin-right: 5px;
+					}
+					&:not(:first-child) {
+						&:before{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.box-price{
+			margin-top: 2em;
+			.txt-comment{
+				.fa-calendar{
+					background:#0097DA;
+					@include border-radius(3px);
+					color: $white;
+					@include cV(padding,10px,5px,10px);
+					margin-right: .5em;
+				}
+				.fa-comments{
+					background:#87CF39;
+					@include border-radius(3px);
+					color: $white;
+					@include cV(padding,10px,5px,10px);
+				}
+			}
+			.text-right{
+				@include fsz(18);
+				font-weight: 500;
+				color: #1D2C4C;
+				span{
+					color: #0095D6;
+				}
+			}
+		}
+	}
+}

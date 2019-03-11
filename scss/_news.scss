@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : news.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+
+/* -----------------------------------------------------------
+	#page
+----------------------------------------------------------- */
+.box-news-item{
+	@include clearfix;
+	@include border-radius(3px);
+	.box-news-feauture{
+		position: relative;
+		a{
+			position: relative;
+			display: block;
+			&:before{
+				content: "";
+				width: 100%;
+				height: 50%;
+				position: absolute;
+				z-index: 1;
+				@include background(linear-gradient(180deg, rgba(18, 113, 176, 0.0001) 0%, rgba(0, 0, 0, 0.788695) 100%));
+				bottom: 0;
+				left: 0;
+			}			
+		}
+		.box-title-news{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			padding: 10px;
+			color: $white;
+			z-index: 9;
+			.news-date{
+				@include fsz(12);
+				font-weight: 300;
+			}
+			h5{
+				@include fsz(18);
+				line-height: 1.6;
+			}
+		}
+	}
+	.list-news-different{
+		@include clearfix;
+		margin-top: 2em;
+		li{
+			border-bottom: 1px solid #E1E5EA;
+			@include clearfix;
+			a{
+				padding: 15px 0;
+				display: block;
+				@include clearfix;
+				color: #525975;
+				.box-img{
+					width: 25%;
+					float: left;
+				}
+				.box-title-news{
+					width: 72%;
+					float: right;
+					.news-date{
+						@include fsz(14);
+						font-weight: 300;
+					}
+					h5{
+						@include fsz(16);
+						line-height: 1.6;
+					}					
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : base.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700|Roboto:300,400,500,700');
+
+html {
+	font-size: small;
+	line-height: 1.5;
+}
+body {
+	color: $baseColor;
+	background: #fff;
+	-webkit-text-size-adjust: none;
+	@include fsz($baseSize,13);
+	.ie & { @include fsz($baseSize,13.4); }
+	@include mq(sp) {
+		@include fsz($baseSize - 1,13);
+	}
+	a {
+		@include transition(opacity 200ms ease-in);
+		.mouse &:hover,
+		.touch &.touchstart {
+			text-decoration: none;
+			@include opacity(.7);
+		}
+		&:hover{
+			@include opacity(.7);
+		}
+	}
+	img {
+		max-width: 100%;
+		-webkit-touch-callout: none;
+	}
+}
+body,pre,input,textarea,select {
+	font-family: $robo;
+}
+input,select,textarea {
+	font-size: 100%;
+}
+
+html.ie8 {
+	.view_tab, 
+	.view_tab_sp, 
+	.view_sp {
+		display: none !important;
+	}
+	#page {
+		min-width: $columnWidth * 1px !important;
+		margin: auto;
+		font-size: 100% !important;
+	}
+}
+
+// .view_xxx
+body {
+	@include mq(pc) {
+		.view_tab-sp,.view_tab {display: none !important;}
+	}
+	@include mq(pc_tab) {
+		.view_sp {display: none !important;}
+	}
+	@include mq(tab_sp) {
+		.view_pc {display: none !important;}
+	}
+	@include mq(sp) {
+		.view_pc-tab,.view_tab {display: none !important;}
+	}
+}
+
+// .mouseOver
+.over {
+	.mouse & {
+		@include transition(opacity 200ms ease-in);
+	}
+	@include hover {
+		@include opacity(.7);
+	}
+}
+
+// border-box
+* {
+	@include box-sizing(border-box);
+}
+
+.container-fluid{
+
+}
+
+.container {
+  @include mq(pc) {
+    width: 1200px;
+  }	
+  @include mq(tab) {
+    width: 98%;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  	width: 98%;
+  }
+  @include mq(sp) {
+    width: 100%;
+  }    
+}
+.btn-default{
+	border:1px solid #999;
+	background:none;
+	&.btn-default-white{
+		border-color: $white;
+		color: $white;
+	}
+	&:hover{
+		background: none;
+		
+	}
+}

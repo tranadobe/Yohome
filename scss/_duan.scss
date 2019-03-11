@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : homepage.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+.project-page{
+	position: relative;
+}
+.bn-fixed{
+	position: absolute;
+	top: 50px;
+	z-index: 9;
+	&.box-banner-left{
+		left: -120px;
+	}
+	&.box-banner-right{
+		right: -120px;
+	}
+}
+.box-filter-duan{
+	padding: 32px 0;
+	border-top: 1px solid #D3D9E1;
+	border-bottom: 1px solid #D3D9E1;
+	margin-bottom: 40px;
+	h4{
+		font-weight: bold;
+		@include fsz(18);
+		margin-bottom: .5em;
+	}
+	.box-group-fillter{
+		@include clearfix;
+		.item-fillter{
+			@include grid_col(5,2%,0);
+			@include mq(sp) {
+				@include grid_col(2,2%,0);
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.col-xs-12.pull-right{
+		@include mq(sp) {
+			margin-top: 2em;
+			.form-control{
+				width: 49%;
+			}
+		}		
+	}
+}
+/* -----------------------------------------------------------
+	#box-project-favorite
+----------------------------------------------------------- */
+.box-project-favorite{
+	@include clearfix;
+	.list-project-favorite{
+		@extend %cf;
+		li{
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 10px;
+			}
+			.product-item{
+				@include clearfix;
+				@include mq(sp) {
+					border:none;
+					@include box-shadow(none);
+				}
+				.product-images{
+					width: wCon(370);
+					float: left;
+					@include mq(sp) {
+						width: 100%;
+					}
+				}
+				.product-caption{
+					@include cV(width,68%,68%,100%);
+					float: right;
+					@include cV(padding,30px 20px,30px 20px,15px 15px);
+					h4{
+						@include fsz(26);
+						@include mq(sp) {
+							@include fsz(20);
+						}
+					}
+					.text-price{
+						@include fsz(18);
+						font-weight: 500;
+						color: #1D2C4C;
+						span{
+							color: $text-primary;
+						}
+						@include mq(tab_sp) {
+							text-align: left;
+						}
+					}
+					.pr-add{
+						color: #525975;
+						@include mq(sp) {
+							margin-bottom: 1em;
+						}
+						.fa{
+							color: #DADADA;
+							margin-right: 5px;
+						}
+					}
+					.box-price {
+						.text-right	{
+							@include fsz(14);
+							font-weight: 500;
+							a{
+								color: $navatop;
+								text-decoration: underline !important;
+							}
+						}	
+					}			
+				}
+			}
+			.pd-desc{
+				margin-top: 1em;
+			}
+			.list-utilities-list{
+				@include clearfix;
+				border:1px solid #E1E5EA;
+				margin: 25px 0 50px;
+				@include mq(sp) {
+					border-bottom: none;
+				}
+				li{
+					@include grid_col(4,0,0);
+					border-right:1px solid  #E1E5EA;
+					@include cV(padding,15px 0 15px 30px,15px 0 15px 30px,15px 10px 15px);
+					margin-bottom: 0;
+					&:last-child{
+						border-right: none;
+					}
+					@include mq(sp) {
+						@include grid_col(2,0,0);
+						border-bottom:1px solid  #E1E5EA;
+						&:nth-child(2n) {
+							border-right: none;
+						}
+					}					
+					.title{
+						margin-bottom: 2px;
+						font-weight: normal;
+					}
+					.text{
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+	.btn-view-more{
+		margin: 10px 0;
+	}
+}
+.box-banner{
+	margin-bottom: 40px;
+}
+.list-bds{
+	@include clearfix;
+	margin-bottom: 15px;
+	.bds-item{
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@include mq(sp) {
+			.col-xs-12.col-sm-12.col-md-4.col-lg-4{
+				margin-bottom: 30px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

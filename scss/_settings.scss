@@ -86,6 +86,7 @@ $robo: 'Roboto', sans-serif;
 $muli: 'Muli', sans-serif;
 $navatop:#1D2C4C;
 $clr-text-menu:#182A48;
+$text-primary:#0095D6;
 //----------------------------------------------//
 // *Placeholder									//
 //----------------------------------------------//
@@ -203,4 +204,33 @@ $clr-text-menu:#182A48;
   &:nth-of-type(#{$num}n){
     margin-right: 0;
   }
+}
+@mixin iconStyle {
+	&:before,&:after {
+		font-family: FontAwesome;
+		vertical-align: middle;
+	}
+	>* {
+		vertical-align: middle;
+		display: inline;
+	}
+}
+
+/*icon style*/
+@mixin icon($content:'\F105', $Pseudo:'before') {
+	@if $Pseudo == 'after' {
+		@include iconStyle;
+		&:after {
+			content: "#{$content}";
+			margin-left: .5em;
+			@content;
+		}
+	}@else {
+		@include iconStyle;
+		&:before {
+			content: "#{$content}";
+			margin-right: .5em;
+			@content;
+		}
+	}
 }

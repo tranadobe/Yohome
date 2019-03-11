@@ -7,6 +7,8 @@ CSS information
 =================================================================== */
 #header{
 	@extend %cf;
+	@include background(linear-gradient(180deg, #215787 0%, #5F8CB6 100%));
+	padding-bottom: 80px;
 	.navbar-toggle{
 		color: $white;
 		margin-top: 0;
@@ -27,6 +29,8 @@ CSS information
 		@include border-radius(0);
 		border:none;
 		@include mq(sp) {
+			height: auto;
+			min-height: 40px;
 			.navbar-nav{
 				width: calc(100% + 15px);
 				margin: 7px -10px 7px 0;
@@ -38,6 +42,10 @@ CSS information
 		.navbar-brand{
 			font-size: 100%;
 			color: $white;
+			@include mq(sp) {
+				padding: 15px 0;
+				height: auto;
+			}
 		}
 		.navbar-nav {
 			li{
@@ -63,6 +71,63 @@ CSS information
 						@include fsz(17);
 						margin-right: .3em;
 						vertical-align: middle;
+					}
+				}
+				&.lnk-information{
+					position: relative;
+					&:before {
+						content: "";
+						width: 1px;
+						height: 50%;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						@include transform(translate(0,-50%));
+						background:rgba($white,.2);
+					}
+					a{
+						padding: 10px 15px;
+						span{
+							width: 30px;
+							height: 30px;
+							@include border-radius(50%);
+							display: inline-block;
+							@include clearfix;
+							vertical-align: middle;
+							margin-right: 5px;
+						}
+					}
+					.sub-menu-acc{
+						position: absolute;
+						top: 100%;
+						z-index: 0;
+						width: 200px;
+						right: 0;
+						z-index: 9;
+						@include opacity(0);
+						visibility: hidden;
+						@include transition(all .4s ease);
+						background:#FFF;
+						li{
+							border-bottom: 1px solid #DADADA;
+							a{
+								padding: 10px;
+								font-weight: 500;
+								display: block;
+								color: $navatop;
+							}
+							&.logout{
+								a{
+									color: #FF0633;
+								}
+							}
+						}
+					}
+					&:hover{
+						.sub-menu-acc{
+							@include opacity(1);
+							visibility: visible;
+						}
 					}
 				}
 				@include mq(sp) {
@@ -199,6 +264,9 @@ CSS information
 
 		}
 	}
+	.box-advance-search-page{
+		@include cV(margin,60px auto 0,50px auto 0,40px auto 0);
+	}
 }
 .box-count-down{
 	ul{
@@ -226,7 +294,7 @@ CSS information
 		}
 	}
 }
-.box-advance-search {
+.box-tab {
 	.box-search{
 		@include clearfix;
 		@include mq(sp) {
@@ -287,7 +355,6 @@ CSS information
 	.box-advance-button{
 		padding: 25px 20px;
 		line-height: 2;
-		height: 70px;
 		font-weight: normal;	
 		border-left: 1px solid #D7DCE3;	
 		@include cV(display,table-cell,table-cell,block);
@@ -328,6 +395,8 @@ CSS information
 	position: absolute;
 	top: 105%;
 	width: 100%;
+	z-index: 999;
+	display: none;
 	@include mq(sp) {
 		display: none;
 	}
@@ -382,7 +451,7 @@ CSS information
         .panel_inner {
             display: none;
             background: #FFF;
-            &:first-child { display: list-item; }
+            &:first-child { display: block; }
         }
     }
 }

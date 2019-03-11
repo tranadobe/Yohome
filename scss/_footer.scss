@@ -179,7 +179,7 @@ CSS information
 				strong{
 					display: block;
 					@include fsz(18);
-					color: #0095D6;
+					color: $text-primary;
 					font-weight: normal;
 				}
 			}

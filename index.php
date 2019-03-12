@@ -113,127 +113,121 @@
 		        	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 		        		<h4 class="title-module">DỰ ÁN</h4>
 		        		<div class="product-item">
-		        			<a class="over" href="#">
-			        			<div class="product-images">
-			        				<div class="img-inner"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></div>
-			        				<div class="box-view-control">
-			        					<div class="row">
-			        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-			        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
-			        						</div>
-			        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-			        							<img src="images/ic-360.png" alt="45 Đang xem">
-			        							<img src="images/ic-gallery.png" alt="Album ảnh">
-			        							<img src="images/ic-favior.png" alt="Yêu thích">
-			        						</div>
-			        					</div>
-			        				</div>
-			        			</div>
-			        			<div class="product-caption">
-			        				<h4>Vinhomes Graden Mỹ Đình</h4>
-			        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
-			        				<ul class="list-project">
-			        					<li>Hạ tầng</li>
-			        					<li>Tiện ích</li>
-			        					<li>Chủ đầu tư</li>
-			        				</ul>
-			        				<div class="box-price">
-			        					<div class="row">
-			        						<div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 txt-comment">
-			        							<i class="fa fa-calendar"></i>
-			        							<i class="fa fa-comments"></i>
-			        						</div>
-			        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
-			        							Giá từ: <span>8.4 tỷ</span>
-			        						</div>
-			        					</div>
-			        				</div>
-			        			</div>
-		        			</a>
+		        			<div class="product-images">
+		        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
+		        				<div class="box-view-control">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+		        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
+		        						</div>
+		        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+		        							<a class="over" href="#"><img src="images/ic-360.png" alt="45 Đang xem"></a>
+		        							<a class="over" href="#"><img src="images/ic-gallery.png" alt="Album ảnh"></a>
+		        							<a class="over" href="#"><img src="images/ic-favior.png" alt="Yêu thích"></a>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="product-caption">
+		        				<h4><a class="over" href="#">Vinhomes Graden Mỹ Đình</a></h4>
+		        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
+		        				<ul class="list-project">
+		        					<li>Hạ tầng</li>
+		        					<li>Tiện ích</li>
+		        					<li>Chủ đầu tư</li>
+		        				</ul>
+		        				<div class="box-price">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 txt-comment">
+		        							<i class="fa fa-calendar"></i>
+		        							<i class="fa fa-comments"></i>
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							Giá từ: <span>8.4 tỷ</span>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
 		        		</div>
 		        	</div>
 		        	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 		        		<h4 class="title-module">MUA</h4>
-		        		<div class="product-item">
-		        			<a class="over" href="#">
-			        			<div class="product-images">
-			        				<div class="img-inner"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></div>
-			        				<div class="box-view-control">
-			        					<div class="row">
-			        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-			        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
-			        						</div>
-			        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
-			        							<img src="images/ic-360.png" alt="45 Đang xem">
-			        							<img src="images/ic-gallery.png" alt="Album ảnh">
-			        							<img src="images/ic-favior.png" alt="Yêu thích">
-			        						</div>
-			        					</div>
-			        				</div>
-			        			</div>
-			        			<div class="product-caption">
-			        				<h4>Vinhomes Graden Mỹ Đình</h4>
-			        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
-			        				<ul class="list-project list-pro">
-			        					<li><img src="images/ic_dientich.png" alt="45 m2"> 45 m2</li>
-			        					<li><img src="images/ic_bed.png" alt="2PN"> 2PN</li>
-			        					<li><img src="images/ic_bath.png" alt="1PT"> 1PT</li>
-			        				</ul>
-			        				<div class="box-price">
-			        					<div class="row">
-			        						<div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 txt-comment">
-			        							<i class="fa fa-calendar"></i>
-			        							<i class="fa fa-comments"></i>
-			        						</div>
-			        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
-			        							Giá từ: <span>8.4 tỷ</span>
-			        						</div>
-			        					</div>
-			        				</div>
-			        			</div>
-		        			</a>
+						<div class="product-item">
+		        			<div class="product-images">
+		        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
+		        				<div class="box-view-control">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+		        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							<a class="over" href="#"><img src="images/ic-360.png" alt="45 Đang xem"></a>
+		        							<a class="over" href="#"><img src="images/ic-gallery.png" alt="Album ảnh"></a>
+		        							<a class="over" href="#"><img src="images/ic-favior.png" alt="Yêu thích"></a>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="product-caption">
+		        				<h4><a class="over" href="#">Vinhomes Graden Mỹ Đình</a></h4>
+		        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
+		        				<ul class="list-project list-pro">
+		        					<li><img src="images/ic_dientich.png" alt="45 m2"> 45 m2</li>
+		        					<li><img src="images/ic_bed.png" alt="2PN"> 2PN</li>
+		        					<li><img src="images/ic_bath.png" alt="1PT"> 1PT</li>
+		        				</ul>
+		        				<div class="box-price">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 txt-comment">
+		        							<i class="fa fa-calendar"></i>
+		        							<i class="fa fa-comments"></i>
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							Giá từ: <span>8.4 tỷ</span>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
 		        		</div>
 		        	</div>
 					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 		        		<h4 class="title-module">THUÊ</h4>
-		        		<div class="product-item">
-		        			<a class="over" href="#">
-			        			<div class="product-images">
-			        				<div class="img-inner"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></div>
-			        				<div class="box-view-control">
-			        					<div class="row">
-			        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
-			        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
-			        						</div>
-			        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-			        							<img src="images/ic-360.png" alt="45 Đang xem">
-			        							<img src="images/ic-gallery.png" alt="Album ảnh">
-			        							<img src="images/ic-favior.png" alt="Yêu thích">
-			        						</div>
-			        					</div>
-			        				</div>
-			        			</div>
-			        			<div class="product-caption">
-			        				<h4>Vinhomes Graden Mỹ Đình</h4>
-			        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
-			        				<ul class="list-project list-pro">
-			        					<li><img src="images/ic_dientich.png" alt="45 m2"> 45 m2</li>
-			        					<li><img src="images/ic_bed.png" alt="2PN"> 2PN</li>
-			        					<li><img src="images/ic_bath.png" alt="1PT"> 1PT</li>
-			        				</ul>
-			        				<div class="box-price">
-			        					<div class="row">
-			        						<div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 txt-comment">
-			        							<i class="fa fa-calendar"></i>
-			        							<i class="fa fa-comments"></i>
-			        						</div>
-			        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
-			        							Giá từ: <span>8.4 tỷ</span>
-			        						</div>
-			        					</div>
-			        				</div>
-			        			</div>
-		        			</a>
+						<div class="product-item">
+		        			<div class="product-images">
+		        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
+		        				<div class="box-view-control">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+		        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							<a class="over" href="#"><img src="images/ic-360.png" alt="45 Đang xem"></a>
+		        							<a class="over" href="#"><img src="images/ic-gallery.png" alt="Album ảnh"></a>
+		        							<a class="over" href="#"><img src="images/ic-favior.png" alt="Yêu thích"></a>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="product-caption">
+		        				<h4><a class="over" href="#">Vinhomes Graden Mỹ Đình</a></h4>
+		        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
+		        				<ul class="list-project list-pro">
+		        					<li><img src="images/ic_dientich.png" alt="45 m2"> 45 m2</li>
+		        					<li><img src="images/ic_bed.png" alt="2PN"> 2PN</li>
+		        					<li><img src="images/ic_bath.png" alt="1PT"> 1PT</li>
+		        				</ul>
+		        				<div class="box-price">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-5 col-md-6 col-lg-6 txt-comment">
+		        							<i class="fa fa-calendar"></i>
+		        							<i class="fa fa-comments"></i>
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							Giá từ: <span>8.4 tỷ</span>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
 		        		</div>
 		        	</div>		        	
 				</div>	    			

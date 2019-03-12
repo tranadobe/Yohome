@@ -41,8 +41,8 @@
                 </div>
                 <div class="link-vip pull-right view_pc-tab">
                     <ul class="btn-link-vip">
-                        <li><a href="#"  class="btn btn-default"><i class="fa fa-gift"></i> Ưu đãi VIP</a></li>
-                        <li class="btn-free"><a href="#" class="btn btn-danger">Đăng tin miễn phí</a></li>
+                        <li><button class="btn btn-default" data-toggle="modal" data-target="#uuDaiVip"><i class="fa fa-gift"></i> Ưu đãi VIP</button></li>
+                        <li class="btn-free"><button class="btn btn-danger" data-toggle="modal" data-target="#modalDangtin">Đăng tin miễn phí</button></li>
                     </ul>
                 </div>
             </div>

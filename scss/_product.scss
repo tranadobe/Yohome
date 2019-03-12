@@ -60,6 +60,9 @@ CSS information
 					vertical-align: baseline;
 					margin-left: 10px;
 				}
+				a{
+					display: inline-block;
+				}
 			}
 		}
 		.img-inner img{
@@ -81,6 +84,9 @@ CSS information
 			font-weight: bold;
 			color: #1D2C4C;
 			line-height:(26/18);
+			a{
+				color: #1D2C4C;
+			}
 		}
 		.pr-add{
 			margin: .5em 0 1.5em;

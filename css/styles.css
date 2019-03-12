@@ -1,10 +1,15 @@
+@charset "UTF-8";
 /* ===================================================================
 CSS information
-
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
 =================================================================== */
 /* ===================================================================
 CSS information
-
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
 =================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700|Roboto:300,400,500,700");
 .main-container {
@@ -18,7 +23,7 @@ CSS information
 	}
 }
 
-#header:after, #header .header-main:after, #header .header-main .main-menu:after, #header .header-main .main-menu ul:after, #footer:after, .fixmenu .box_menu .list_menu:after, .fixmenu .box_menu .btn-link-vip:after, .box-purchase-lease:after, .box-different-youhome ul:after, .main-container:after, .box-project-favorite .list-project-favorite:after {
+#header:after, #header .header-main:after, #header .header-main .main-menu:after, #header .header-main .main-menu ul:after, #footer:after, .fixmenu .btn-link-vip:after, .fixmenu .box_menu .list_menu:after, .box-purchase-lease:after, .box-different-youhome ul:after, .main-container:after, .box-project-favorite .list-project-favorite:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -34,6 +39,7 @@ CSS information
 html {
 	font-size: small;
 	line-height: 1.5;
+	overflow: unset;
 }
 
 body {
@@ -230,8 +236,17 @@ select.form-control.form-control-nobd {
 	background: none;
 }
 
+.form-control {
+	border: 1px solid #D7DCE3;
+}
+
 .text-primary {
 	color: #0095D6;
+}
+
+.btn-primary {
+	background: #0095D6;
+	border-color: #0095D6;
 }
 
 .btn-default {
@@ -350,7 +365,9 @@ select.form-control.form-control-nobd {
 
 /* ===================================================================
 CSS information
-
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
 =================================================================== */
 #header {
 	background: -svg-linear-gradient(180deg, #215787 0%, #5F8CB6 100%);
@@ -545,6 +562,12 @@ CSS information
 	padding: 0 40px;
 }
 
+@media only screen and (max-width: 767px) {
+	#header .header-main .container-fluid {
+		text-align: center;
+	}
+}
+
 #header .header-main .container {
 	position: relative;
 }
@@ -562,6 +585,13 @@ CSS information
 @media only screen and (max-width: 767px) {
 	#header .header-main .logo {
 		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#header .header-main .logo {
+		float: none !important;
+		margin: auto;
 	}
 }
 
@@ -607,18 +637,34 @@ CSS information
 	}
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+	#header .header-main .main-menu ul li a {
+		padding: 15px 15px;
+	}
+}
+
+@media print {
+	#header .header-main .main-menu ul li a {
+		padding: 15px 15px;
+	}
+}
+
+.ie8 #header .header-main .main-menu ul li a {
+	padding: 15px 15px;
+}
+
 #header .header-main .btn-link-vip li {
 	float: left;
 	padding: 0 5px;
 }
 
-#header .header-main .btn-link-vip li a {
+#header .header-main .btn-link-vip li a, #header .header-main .btn-link-vip li button {
 	padding: 10px 15px;
 	font-size: 115%;
 	font-weight: 500;
 }
 
-#header .header-main .btn-link-vip li a.btn-default {
+#header .header-main .btn-link-vip li a.btn-default, #header .header-main .btn-link-vip li button.btn-default {
 	background: none;
 	color: #FFF;
 	border-color: #FFF;
@@ -656,13 +702,14 @@ CSS information
 
 #header .header-layout .menuopen {
 	position: relative;
-	float: right;
+	float: left;
 	padding: 5px 10px;
 	line-height: 1;
 	background-color: transparent;
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
+	outline: none;
 	color: #FFF;
 	font-size: 158%;
 }
@@ -688,7 +735,7 @@ CSS information
 	color: #182A48;
 }
 
-#header .header-layout.fixed .header-main .btn-link-vip li a.btn-default {
+#header .header-layout.fixed .header-main .btn-link-vip li button.btn-default {
 	border-color: #182A48;
 	color: #182A48;
 }
@@ -794,6 +841,7 @@ CSS information
 @media only screen and (max-width: 767px) {
 	.box-tab .box-search .input-group {
 		display: block;
+		position: relative;
 	}
 }
 
@@ -924,7 +972,7 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.box-tab .box-input-search {
-		margin: .5em 0;
+		margin: 0;
 		overflow: hidden;
 		*zoom: 1;
 	}
@@ -965,6 +1013,15 @@ CSS information
 	line-height: 2;
 	height: 70px;
 	font-weight: normal;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-tab .box-input-search .form-control {
+		border: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
 }
 
 .box-tab .box-advance-button {
@@ -1024,7 +1081,17 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.box-tab .box-button-search {
-		width: 100%;
+		width: 15%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.box-tab .box-button-search {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 9;
+		background: none;
 	}
 }
 
@@ -1046,10 +1113,12 @@ CSS information
 
 @media only screen and (max-width: 767px) {
 	.box-tab .box-button-search .btn-primary {
-		padding: 15px 20px;
+		padding: 3px 5px;
 		display: block;
 		height: auto;
 		width: 100%;
+		color: #1D2C4C;
+		background: none;
 	}
 }
 
@@ -1148,7 +1217,9 @@ CSS information
 
 /* ===================================================================
 CSS information
-
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
 =================================================================== */
 #footer {
 	background: #1D2C4C;
@@ -1304,11 +1375,11 @@ CSS information
 @media only screen and (max-width: 767px) {
 	#footer .footer-widget-link .widget-title {
 		position: relative;
-		background: rgba(249, 249, 249, 0.1);
-		padding: .5em .5em;
+		padding: .3em .5em .8em;
+		border-bottom: 1px solid rgba(249, 249, 249, 0.1);
 	}
 	#footer .footer-widget-link .widget-title:before {
-		content: "\f0d7" !important;
+		content: "\f107" !important;
 		font-family: "FontAwesome";
 		position: absolute;
 		right: .8em;
@@ -1324,7 +1395,7 @@ CSS information
 		font-size: 80%;
 	}
 	#footer .footer-widget-link .widget-title.active:before {
-		content: "\f0d8" !important;
+		content: "\f106" !important;
 	}
 }
 
@@ -1350,6 +1421,14 @@ CSS information
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
 	#footer .footer-box-hotline .col-xs-12.col-md-3.col-lg-3 {
 		margin-bottom: 2em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#footer .footer-box-hotline {
+		border-top: none;
+		margin-top: 1em;
+		padding-top: 0;
 	}
 }
 
@@ -1384,6 +1463,18 @@ CSS information
 	padding-top: 2em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	#footer .footer-copyright {
+		margin-top: 3em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#footer .footer-copyright {
+		margin-top: 1em;
+	}
+}
+
 #footer .footer-copyright .text-copyright {
 	color: #FFF;
 }
@@ -1416,17 +1507,23 @@ CSS information
 body.fix_active {
 	width: 100%;
 	top: 100%;
+	height: 100%;
 	top: 0;
 	left: 0;
 	overflow: hidden;
 }
 
 body.fix_active .fixOpenMenu {
-	overflow: auto;
+	overflow-y: auto;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
 	visibility: visible;
 	z-index: 999;
+	left: 0;
+}
+
+body.fix_active #page {
+	overflow: hidden;
 }
 
 /* -----------------------------------------------------------
@@ -1438,11 +1535,11 @@ body.fix_active .fixOpenMenu {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 	opacity: 0;
 	visibility: hidden;
-	width: 100%;
+	width: 88%;
 	top: 0;
-	right: 0;
+	left: -100%;
 	height: 100%;
-	background: rgba(29, 44, 76, 0.95);
+	background: #FFF;
 	overflow: hidden;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -1453,13 +1550,32 @@ body.fix_active .fixOpenMenu {
 
 .fixmenu .fixmenu_inner {
 	margin: auto;
-	padding-top: 1em;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
 	.fixmenu .fixmenu_inner {
 		width: 95%;
 	}
+}
+
+.fixmenu .fixmenu_inner .header-menu {
+	background: #F5F8FB;
+	border-bottom: 1px solid #D7DCE3;
+	padding: 5px 15px;
+}
+
+.fixmenu .fixmenu_inner .header-menu .menuopen {
+	cursor: pointer;
+	font-size: 158%;
+}
+
+.fixmenu .fixmenu_inner .header-menu .col-md-6.col-lg-6 {
+	line-height: 35px;
+	height: 35px;
+}
+
+.fixmenu .fixmenu_inner .header-menu .col-md-6.col-lg-6 a {
+	color: #1D2C4C;
 }
 
 .fixmenu .fixmenu_inner h3 {
@@ -1469,6 +1585,26 @@ body.fix_active .fixOpenMenu {
 	font-size: 143%;
 }
 
+.fixmenu .btn-link-vip {
+	padding: 1em 5%;
+	border-bottom: 1px solid #D7DCE3;
+}
+
+.fixmenu .btn-link-vip li {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	float: left;
+}
+
+.fixmenu .btn-link-vip li:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.fixmenu .btn-link-vip li .btn {
+	display: block;
+}
+
 .fixmenu .box_menu {
 	overflow: hidden;
 	*zoom: 1;
@@ -1476,11 +1612,13 @@ body.fix_active .fixOpenMenu {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	height: calc(100% - 100px);
+	overflow-y: scroll;
 	margin: auto;
 }
 
 .fixmenu .box_menu .list_menu {
-	width: 100%;
+	width: 90%;
 	padding: 0;
 	margin: auto;
 	-webkit-box-sizing: border-box;
@@ -1495,13 +1633,13 @@ body.fix_active .fixOpenMenu {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
-	border-top: 1px solid rgba(249, 249, 249, 0.1);
+	border-bottom: 1px solid #D7DCE3;
 	width: 100%;
 	float: left;
 }
 
 .fixmenu .box_menu .list_menu li:last-child {
-	border-bottom: 1px solid rgba(249, 249, 249, 0.1);
+	border-bottom: none;
 }
 
 .fixmenu .box_menu .list_menu li a {
@@ -1510,7 +1648,7 @@ body.fix_active .fixOpenMenu {
 	box-sizing: border-box;
 	text-decoration: none;
 	display: block;
-	padding: .8em 5%;
+	padding: 1em 0;
 	position: relative;
 	font-size: 115%;
 	-webkit-transition: all 0.3s ease;
@@ -1519,7 +1657,25 @@ body.fix_active .fixOpenMenu {
 	transition: all 0.3s ease;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
-	color: #FFF;
+	color: #1D2C4C;
+	position: relative;
+}
+
+.fixmenu .box_menu .list_menu li a:before, .fixmenu .box_menu .list_menu li a:after {
+	font-family: FontAwesome;
+	vertical-align: middle;
+}
+
+.fixmenu .box_menu .list_menu li a > * {
+	vertical-align: middle;
+	display: inline;
+}
+
+.fixmenu .box_menu .list_menu li a:after {
+	content: "";
+	margin-left: .5em;
+	position: absolute;
+	right: 0;
 }
 
 .fixmenu .box_menu .list_menu li a:hover {
@@ -1533,99 +1689,11 @@ body.fix_active .fixOpenMenu {
 	}
 }
 
-.fixmenu .box_menu .btn-link-vip {
-	padding: 1em 5%;
-}
-
-.fixmenu .box_menu .btn-link-vip li {
-	float: left;
-	width: 47.5%;
-	margin-right: 5%;
-	float: left;
-}
-
-.fixmenu .box_menu .btn-link-vip li:nth-of-type(2n) {
-	margin-right: 0;
-}
-
-.fixmenu .box_menu .btn-link-vip li .btn {
-	display: block;
-}
-
-.fixmenu .box_menu .btn-link-vip li .btn-default {
-	background: #FFF;
-	border-color: #FFF;
-}
-
-.btn_closeall {
-	text-align: center;
-	margin: 1.5em 0 3em;
-}
-
-@media only screen and (max-width: 767px) {
-	.btn_closeall {
-		margin-bottom: 2em;
-	}
-}
-
-.btn_closeall .ic_close {
-	width: 5.5em;
-	padding-top: 0.5em;
-	height: 5.5em;
-	margin: auto;
-	display: block;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	overflow: hidden;
-	*zoom: 1;
-	text-transform: uppercase;
-	color: #FFF;
-}
-
-.btn_closeall .ic_close .line_close {
-	height: 2.5em;
-	width: 3em;
+.fixmenu .box_menu .list_menu li span {
+	padding: 1em 0;
 	position: relative;
 	display: block;
-	margin: auto;
-	margin-bottom: 0.3em;
-}
-
-.btn_closeall .ic_close .line_close:before, .btn_closeall .ic_close .line_close:after {
-	content: "";
-	width: 100%;
-	height: 2px;
-	background: #FFF;
-	position: absolute;
-	left: 0;
-	bottom: 1em;
-}
-
-.btn_closeall .ic_close .line_close:before {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-.btn_closeall .ic_close .line_close:after {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.btn_closeall .ic_close em {
-	color: #FFF;
-}
-
-.btn_closeall .ic_close:hover {
-	cursor: pointer;
+	font-size: 115%;
 }
 
 /* ===================================================================
@@ -2155,7 +2223,9 @@ CSS information
 
 /* ===================================================================
 CSS information
-
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
 =================================================================== */
 /* -----------------------------------------------------------
 	#page
@@ -2235,6 +2305,10 @@ CSS information
 	margin-left: 10px;
 }
 
+.product-item .product-images .box-view-control .text-right a {
+	display: inline-block;
+}
+
 .product-item .product-images .img-inner img {
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
@@ -2278,6 +2352,10 @@ CSS information
 	font-weight: bold;
 	color: #1D2C4C;
 	line-height: 1.44444;
+}
+
+.product-item .product-caption h4 a {
+	color: #1D2C4C;
 }
 
 .product-item .product-caption .pr-add {
@@ -2579,6 +2657,9 @@ CSS information
 	.box-filter-duan .col-xs-12.pull-right .form-control {
 		width: 49%;
 	}
+	.box-filter-duan .col-xs-12.pull-right .col-xs-6.col-sm-6.col-md-6.col-lg-6 .form-control {
+		width: 100%;
+	}
 }
 
 /* -----------------------------------------------------------
@@ -2802,6 +2883,71 @@ CSS information
 	.list-bds .bds-item .col-xs-12.col-sm-12.col-md-4.col-lg-4:last-child {
 		margin-bottom: 0;
 	}
+}
+
+/* ===================================================================
+CSS information
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+.modal .modal-dialog .modal-header {
+	border-bottom: none;
+	padding: 5px 0;
+}
+
+.modal .modal-dialog .modal-header .close {
+	color: #FFF;
+	background: #1D2C4C;
+	margin-top: -5px;
+	padding: 10px 15px;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+	font-size: 24px;
+}
+
+.modal .modal-dialog .modal-content {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-body {
+	padding: 15px 30px 30px;
+}
+
+.modal .modal-dialog .modal-body h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "Muli", sans-serif;
+	font-size: 129%;
+	border-bottom: 1px solid #D7DCE3;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.modal .modal-dialog .modal-body .form-group .form-control {
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 1px solid #D7DCE3;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.modal .modal-dialog .modal-body .form-group.text-center {
+	margin-top: 2em;
+}
+
+.modal .modal-dialog .modal-body .box-price .text-right {
+	text-align: left;
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */

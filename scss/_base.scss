@@ -10,6 +10,7 @@ CSS information
 html {
 	font-size: small;
 	line-height: 1.5;
+	overflow: unset;
 }
 body {
 	color: $baseColor;
@@ -123,8 +124,15 @@ select.form-control{
 		background: none;
 	}	
 }
+.form-control{
+	border: 1px solid #D7DCE3;     
+}
 .text-primary{
 	color: $text-primary;
+}
+.btn-primary{
+	background:$text-primary;
+	border-color: $text-primary;
 }
 .btn-default{
 	border:1px solid #999;

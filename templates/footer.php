@@ -112,26 +112,172 @@
 
 <div class="fixmenu fixOpenMenu">
 	<div class="fixmenu_inner">
-		<h3>MENU</h3>
+		<div class="row header-menu">
+			<div class="col-xs-4 col-sm-4 col-md-6 col-lg-6 menuopen">
+				<i class="fa fa-angle-left"></i>
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 text-right">
+				<a href="#">Đăng ký</a> / <a href="#">Đăng nhập</a>
+			</div>
+		</div>
+        <ul class="btn-link-vip">
+            <li><a href="#"  class="btn btn-default"><i class="fa fa-gift"></i> Ưu đãi VIP</a></li>
+            <li class="btn-free"><a href="#" class="btn btn-danger">Đăng tin miễn phí</a></li>
+        </ul>		
 		<div class="box_menu">
 			<ul class="list_menu">
-                <li><a href="#">Mua <i class="fa fa-angle-down"></i></a></li>
+                <li><a href="#">Mua</a></li>
                 <li><a href="">Thuê</a></li>
                 <li><a href="">Chủ nhà</a></li>
                 <li><a href="">Công nghệ</a></li>
                 <li><a href="">Dịch vụ</a></li>
                 <li><a href="">Cộng đồng YouHomers</a></li>
+                <li><span><i class="fa fa-phone"></i> 1800 1234</span></li>
 			</ul>
-            <ul class="btn-link-vip">
-                <li><a href="#"  class="btn btn-default"><i class="fa fa-gift"></i> Ưu đãi VIP</a></li>
-                <li class="btn-free"><a href="#" class="btn btn-danger">Đăng tin miễn phí</a></li>
-            </ul>			
 		</div><!-- /.box_menu -->
-		<div class="btn_closeall">
-			<p class="ic_close menuopen">
-				<span class="line_close"></span>
-				<em>CLOSE</em>
-			</p>
-		</div>
 	</div>
 </div><!-- /.fixmenu -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="uuDaiVip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg " role="document">
+	    <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+	      	<div class="modal-body">
+		        <div class="row">
+		        	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		        		<div class="product-item">
+		        			<div class="product-images">
+		        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
+		        				<div class="box-view-control">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+		        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							<a class="over" href="#"><img src="images/ic-360.png" alt="45 Đang xem"></a>
+		        							<a class="over" href="#"><img src="images/ic-gallery.png" alt="Album ảnh"></a>
+		        							<a class="over" href="#"><img src="images/ic-favior.png" alt="Yêu thích"></a>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="product-caption">
+		        				<h4><a class="over" href="#">Vinhomes Graden Mỹ Đình</a></h4>
+		        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
+		        				<ul class="list-project list-pro">
+		        					<li><img src="images/ic_dientich.png" alt="45 m2"> 45 m2</li>
+		        					<li><img src="images/ic_bed.png" alt="2PN"> 2PN</li>
+		        					<li><img src="images/ic_bath.png" alt="1PT"> 1PT</li>
+		        				</ul>
+		        				<div class="box-price">
+		        					<div class="row">
+		        						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+		        							Giá từ: <span>8.4 tỷ</span>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        		</div>        		
+		        	</div>
+		        	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		        			<h3>Nhận thông tin</h3>
+		        			<div class="form-group">
+		        				<label for="fullName">Họ và tên</label>
+		        				<input type="text" class="form-control" id="fullName">
+		        			</div>
+		        			<div class="form-group">
+		        				<label for="email">Email</label>
+		        				<input type="email" class="form-control" id="email">
+		        			</div>      
+		        			<div class="form-group">
+		        				<label for="phoneNumber">Số điện thoại</label>
+		        				<input type="text" class="form-control" id="phoneNumber">
+		        			</div>
+		        			<div class="form-group text-center">			
+		        				<button type="submit" class="btn btn-primary btn-lg btn-block">Đăng ký</button>
+		        			</div>
+		        			<div class="text-center hotline">Hotline: 0912 934949</div>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="modalDangtin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg " role="document">
+	    <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+	      	<div class="modal-body">
+		        <div class="row">
+		        	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		        		<div class="product-item">
+		        			<div class="product-images">
+		        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
+		        				<div class="box-view-control">
+		        					<div class="row">
+		        						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+		        							<img src="images/ic-view.png" alt="45 Đang xem"> 45 Đang xem
+		        						</div>
+		        						<div class="col-xs-6 col-sm-7 col-md-6 col-lg-6 text-right">
+		        							<a class="over" href="#"><img src="images/ic-360.png" alt="45 Đang xem"></a>
+		        							<a class="over" href="#"><img src="images/ic-gallery.png" alt="Album ảnh"></a>
+		        							<a class="over" href="#"><img src="images/ic-favior.png" alt="Yêu thích"></a>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="product-caption">
+		        				<h4><a class="over" href="#">Vinhomes Graden Mỹ Đình</a></h4>
+		        				<div class="pr-add">Mỹ Đình, Hà Nội</div>
+		        				<ul class="list-project list-pro">
+		        					<li><img src="images/ic_dientich.png" alt="45 m2"> 45 m2</li>
+		        					<li><img src="images/ic_bed.png" alt="2PN"> 2PN</li>
+		        					<li><img src="images/ic_bath.png" alt="1PT"> 1PT</li>
+		        				</ul>
+		        				<div class="box-price">
+		        					<div class="row">
+		        						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+		        							Giá từ: <span>8.4 tỷ</span>
+		        						</div>
+		        					</div>
+		        				</div>
+		        			</div>
+		        		</div>        		
+		        	</div>
+		        	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		        			<h3>Đăng ký lịch xem nhà</h3>
+		        		
+		        			<div class="form-group">
+		        				<label for="fullName">Họ và tên</label>
+		        				<input type="text" class="form-control" id="fullName">
+		        			</div>
+		        			<div class="form-group">
+		        				<label for="email">Email</label>
+		        				<input type="email" class="form-control" id="email">
+		        			</div>      
+		        			<div class="form-group">
+		        				<label for="phoneNumber">Số điện thoại</label>
+		        				<input type="text" class="form-control" id="phoneNumber">
+		        			</div>
+		        			<div class="form-group">
+		        				<label for="dateView">Ngày</label>
+		        				<input type="text" class="form-control" id="dateView">
+		        			</div>  			
+		        			<div class="form-group text-center">			
+		        				<button type="submit" class="btn btn-primary btn-lg btn-block">Đăng ký</button>
+		        			</div>
+		        			<div class="text-center hotline">Hotline: 0912 934949</div>
+		        	</div>
+		        </div>
+		    </div>
+	    </div>
+	 </div>
+</div>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : common.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+.modal-open{
+	// padding-right: 0 !important;
+}
+.modal{
+	.modal-open &{
+		// padding-right: 0 !important;
+	}
+	.modal-dialog{
+		.modal-header{
+			border-bottom: none;
+			padding: 5px 0;
+			.close{
+				color: $white;
+				background:$navatop;
+				margin-top: -5px;
+				padding: 10px 15px;
+				@include opacity(1);
+				font-size: 24px;
+				span{
+
+				}
+			}
+		}
+		.modal-content{
+			@include border-radius(0);
+		}
+		.modal-body{
+			padding: 15px 30px 30px;
+			h3{
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-family: $muli;
+				@include fsz(18);
+				border-bottom: 1px solid #D7DCE3;
+				padding-bottom: 20px;
+				margin-bottom: 30px;
+			}
+			.form-group{
+				.form-control{
+					border:none;
+					@include box-shadow(none);
+					border-bottom: 1px solid #D7DCE3;
+					@include border-radius(0);
+				}
+				&.text-center{
+					margin-top: 2em;
+				}
+			}
+			.box-price{
+				.text-right{
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}

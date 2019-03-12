@@ -9,7 +9,7 @@
         <div id="panel01" class="panel_inner">
             <div class="box-search">
                 <div class="input-group">
-                    <div class="box-province">
+                    <div class="box-province view_pc-tab">
                         <select class="form-control">
                             <option value="1">Hà Nội</option>
                             <option value="2">TP.HCM</option>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="box-advance-button">Nâng cao <i class="fa fa-angle-down"></i></div>
                     <span class="box-button-search">
-                        <button class="btn btn-primary" type="button">Tìm kiếm</button>
+                        <button class="btn btn-primary" type="button"><span class="view_pc-tab">Tìm kiếm</span><i class="fa fa-search view_sp"></i></button>
                     </span>
                 </div><!-- /input-group -->
             </div>
@@ -72,7 +72,7 @@
         <div id="panel02" class="panel_inner">
             <div class="box-search">
                 <div class="input-group">
-                    <div class="box-province">
+                    <div class="box-province view_pc-tab">
                         <select class="form-control">
                             <option value="1">Hà Nội</option>
                             <option value="2">TP.HCM</option>
@@ -86,8 +86,7 @@
                     </div>
                     <div class="box-advance-button">Nâng cao <i class="fa fa-angle-down"></i></div>
                     <span class="box-button-search">
-                        <button class="btn btn-primary" type="button">Tìm kiếm</button>
-                    </span>
+                        <button class="btn btn-primary" type="button"><span class="view_pc-tab">Tìm kiếm</span><i class="fa fa-search view_sp"></i></button>
                 </div><!-- /input-group -->
             </div>
             <div class="box-advance-inner">

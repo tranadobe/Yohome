@@ -146,6 +146,11 @@ CSS information
 	}
 	.header-main{
 		@extend %cf;
+		@include mq(sp) {
+			.container-fluid{
+				text-align: center;
+			}
+		}
 		.container{
 			position: relative;
 		}
@@ -153,6 +158,10 @@ CSS information
 			@include cV(width,10%,10%,25%);
 			// position: absolute;
 			// right: 100%;
+			@include mq(sp) {
+				float: none !important;
+				margin: auto;
+			}
 			.logo-fixed{
 				display: none;
 			}
@@ -174,6 +183,9 @@ CSS information
 						@include mq(tab) {
 							padding: 15px 20px;
 						}
+						@include mq(min_max_w,1280px,1366px) {
+							padding: 15px 15px;
+						}
 					}
 				}
 			}
@@ -182,7 +194,7 @@ CSS information
 			li{
 				float: left;
 				padding: 0 5px;
-				a{
+				a,button{
 					padding: 10px 15px;
 					@include fsz(16);
 					font-weight: 500;
@@ -192,10 +204,6 @@ CSS information
 						border-color: $white;
 					}
 				}
-				// &.btn-free{
-				// 	position: absolute;
-				// 	left: 100%;
-				// }
 			}
 		}
 	}
@@ -215,13 +223,14 @@ CSS information
 	.header-layout{
 		.menuopen{
 			position: relative;
-			float: right;
+			float: left;
 			padding: 5px 10px;
 			line-height: 1;
 			background-color: transparent;
 			background-image: none;
 			border: 1px solid transparent;
 			border-radius: 4px;
+			outline: none;
 			color: $white;
 			@include fsz(22);
 		}		
@@ -240,7 +249,7 @@ CSS information
 				.main-menu ul li a{
 					color: $clr-text-menu;
 				}
-				.btn-link-vip li a.btn-default{
+				.btn-link-vip li button.btn-default{
 					border-color: $clr-text-menu;
 					color: $clr-text-menu;
 				}
@@ -306,6 +315,7 @@ CSS information
 			border:none;
 			@include mq(sp) {
 				display: block;
+				position: relative;
 			}
 		}
 	}
@@ -338,7 +348,7 @@ CSS information
 		@include cV(display,table-cell,table-cell,block);
 		vertical-align: top;
 		@include mq(sp) {
-			margin: .5em 0;
+			margin: 0;
 			@include clearfix;
 		}
 		.form-control{
@@ -349,6 +359,10 @@ CSS information
 				line-height: 2;
 				height: 70px;
 				font-weight: normal;
+			}
+			@include mq(sp) {
+				border:none;
+				@include box-shadow(none);
 			}
 		}
 	}
@@ -368,8 +382,15 @@ CSS information
 	.box-button-search{
 		@include cV(display,table-cell,table-cell,block);
 		vertical-align: top;
-		@include cV(width,10%,10%,100%);
+		@include cV(width,10%,10%,15%);
 		background:#0999D8;
+		@include mq(sp) {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 9;
+			background: none;
+		}
 		.btn-primary{
 			padding: 25px 50px;
 			line-height: 2;
@@ -381,10 +402,12 @@ CSS information
 			text-transform: uppercase;
 			border:none;
 			@include mq(sp) {
-				padding: 15px 20px;
+				padding: 3px 5px;
 				display: block;
 				height: auto;
 				width: 100%;
+				color: $navatop;
+				background: none;
 			}
 		}
 	}

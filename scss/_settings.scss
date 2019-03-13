@@ -80,7 +80,7 @@ $bp_sp: 767px; //sp
 
 $columnWidth: 1170;
 $baseSize: 14;
-$baseColor: #313131;
+$baseColor: #1D2C4C;
 $white:#FFF;
 $robo: 'Roboto', sans-serif;
 $muli: 'Muli', sans-serif;
@@ -232,5 +232,50 @@ $text-primary:#0095D6;
 			margin-right: .5em;
 			@content;
 		}
+	}
+}
+
+//@include btn_slider(#color1,#color2,size);
+@mixin btn_slider($clr:#FFF,$bg_btn:#000,$wid:normal) {
+	position: absolute;
+	top: 50%;	
+	z-index: 99;
+	@include fsz(40);
+	background: rgba($bg_btn,0.4);	
+	text-align: center;
+	color: $clr;
+	@include transform(translate(0,-50%));
+	@include transition(background 300ms);
+	@include border-radius(50%);
+	@include mq(tab_sp) {
+		@include fsz(24);
+	}
+	@if $wid == small {
+		padding: 0 18px;
+	}
+	@if $wid == normal {
+		padding: .1em .5em;
+	}
+	@if $wid == big {
+		padding: 1em 2em;
+	}	
+	&.slick-next{
+		right: 5px;
+		&:before{
+			content: "\f105";
+			font-family: 'FontAwesome';		
+		}		
+	}
+	&.slick-prev{
+		left: 5px;
+		&:before{
+			content: "\f104";
+			font-family: 'FontAwesome';
+		}		
+	}
+	&:hover{
+		cursor: pointer;
+		@include opacity(0.7);
+		filter: alpha(opacity=700);;
 	}
 }

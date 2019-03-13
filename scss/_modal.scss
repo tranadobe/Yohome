@@ -44,6 +44,9 @@ CSS information
 				margin-bottom: 30px;
 			}
 			.form-group{
+				label{
+					font-weight: normal;
+				}
 				.form-control{
 					border:none;
 					@include box-shadow(none);

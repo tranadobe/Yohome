@@ -100,10 +100,49 @@ $(function(){
 		}
 	});	 
 
-    $('.footer-widget-link h4').click(function(){
+    $('.widget-title').click(function(){
         if(!$(this).is('.sp_only') || $(this).is('.sp_only') && abi.sp) {
             var $next = $(this).next();
             if(!$next.is(':animated')) $next.slideToggle(200).prev().toggleClass('active');		
         }
-    });		   
+    });		
+    $('.accodion').click(function(){
+        if(!$(this).is('.sp_only') || $(this).is('.sp_only') && abi.sp) {
+            var $next = $(this).next();
+            if(!$next.is(':animated')) $next.slideToggle(200).prev().toggleClass('active');		
+        }
+    });   
+	$w.on({
+		//load
+		'load' : function(){
+
+		},
+		//scroll
+		'scroll' : function(){
+
+		}
+	}).superResize({
+		//resize
+		resizeAfter : function(){
+
+		}
+	}).firstLoad({
+		//firstLoad
+		pc_tab : function(){
+
+		},
+		sp : function(){
+			$('#mainslider').slick({
+			  dots: false,
+			  infinite: true,
+			  speed: 300,
+			  autoplay:true,
+			  slidesToShow: 1,
+			  adaptiveHeight: false,
+			  prevArrow:'<div type="button" class="slick-prev"></div>',
+			  nextArrow:'<div type="button" class="slick-next"></div>',	
+			    
+			});
+		}
+	});        
 });

@@ -76,7 +76,7 @@
 					<?php for ($i=0; $i <2 ; $i++) { ?>
 					<div class="row bds-item">
 						<?php for ($j=0; $j <3 ; $j++) { ?>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="product-item">
 			        			<div class="product-images">
 			        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
@@ -127,7 +127,7 @@
 					<?php for ($i=0; $i <2 ; $i++) { ?>
 					<div class="row bds-item">
 						<?php for ($j=0; $j <3 ; $j++) { ?>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="product-item">
 			        			<div class="product-images">
 			        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>
@@ -178,7 +178,7 @@
 					<?php for ($i=0; $i <2 ; $i++) { ?>
 					<div class="row bds-item">
 						<?php for ($j=0; $j <3 ; $j++) { ?>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 							<div class="product-item">
 			        			<div class="product-images">
 			        				<div class="img-inner"><a class="over" href="#"><img src="images/pd.png" alt="Vinhomes Graden Mỹ Đình"></a></div>

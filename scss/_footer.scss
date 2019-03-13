@@ -10,6 +10,7 @@ CSS information
 	@extend %cf;
 	padding: 30px 0;
 	@include clearfix;
+	margin-top: 30px;
 	@include mq(sp) {
 		.footer-box-social{
 			.col-xs-12.col-sm-12.col-md-4.col-lg-4{

@@ -9,7 +9,7 @@ CSS information
 
 html {
 	font-size: small;
-	line-height: 1.5;
+	line-height: 1.7;
 	overflow: unset;
 }
 body {
@@ -17,6 +17,7 @@ body {
 	background: #fff;
 	-webkit-text-size-adjust: none;
 	@include fsz($baseSize,13);
+	line-height: 1.7;
 	.ie & { @include fsz($baseSize,13.4); }
 	@include mq(sp) {
 		@include fsz($baseSize - 1,13);
@@ -82,7 +83,9 @@ body {
 		@include opacity(.7);
 	}
 }
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	line-height: 1.2;
+}
 // border-box
 * {
 	@include box-sizing(border-box);
@@ -94,7 +97,11 @@ body {
 .pdl0{
 	padding-left: 0;
 }
+.mt20 {
+	margin-top: 20px;
+}
 .container {
+	position: relative;
   @include mq(pc) {
     width: 1200px;
   }	
@@ -133,6 +140,9 @@ select.form-control{
 .btn-primary{
 	background:$text-primary;
 	border-color: $text-primary;
+}
+.btn{
+	@include border-radius(3px);
 }
 .btn-default{
 	border:1px solid #999;
@@ -216,4 +226,45 @@ select.form-control{
 	font-family: $muli;
 	font-weight: bold;
 	margin-bottom: 30px;
+}
+.tbl-info{
+	width: 100%;
+	border-top: 1px solid #D3D9E1;
+	tr{
+		td{
+			padding: 10px 5px 10px;
+			border-bottom: 1px solid #D3D9E1;
+		}
+	}
+	&.border-none{
+		border-top: none;
+		tr{
+			td{
+				&.none{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+.accodion{
+	@include mq(sp) {
+		&:before{
+			content: "\f107" !important;
+			font-family: "FontAwesome";
+			position: absolute;
+			right: .8em;
+			top: 50%;
+			color: #FFF;
+			@include transform(translate(0,-50%)); 
+			width: auto;
+			left: inherit;
+			font-size: 80%;
+		}
+		&.active{
+			&:before{
+				content: "\f106" !important;
+			}
+		}		
+	}
 }

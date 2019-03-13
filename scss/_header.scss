@@ -8,7 +8,7 @@ CSS information
 #header{
 	@extend %cf;
 	@include background(linear-gradient(180deg, #215787 0%, #5F8CB6 100%));
-	padding-bottom: 80px;
+	padding-bottom: 20px;
 	.navbar-toggle{
 		color: $white;
 		margin-top: 0;
@@ -274,7 +274,7 @@ CSS information
 		}
 	}
 	.box-advance-search-page{
-		@include cV(margin,60px auto 0,50px auto 0,40px auto 0);
+		@include cV(margin,60px auto 80px,50px auto 40px,40px auto 0);
 	}
 }
 .box-count-down{

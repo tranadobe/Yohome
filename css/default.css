@@ -5,9 +5,6 @@ CSS information
  style info :  リセット及びbody初期設定 (このスタイルシートは基本的に変更しない)
 =================================================================== */
 /*--- reset */
-html {
-	overflow-y: scroll;
-}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin: 0;
 	padding: 0;
@@ -31,9 +28,7 @@ object,embed {
 hr,legend {
 	display: none;
 }
-h1,h2,h3,h4,h5,h6 {
-	font-size: 100%;
-}
+
 img,abbr,acronym,fieldset {
 	border: 0;
 }

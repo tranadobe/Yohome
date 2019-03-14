@@ -171,6 +171,12 @@ select.form-control{
 		}
 	}
 }
+.mt20{
+	margin-top: 20px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
 /* -----------------------------------------------------------
 	#topicpath
 ----------------------------------------------------------- */
@@ -267,4 +273,17 @@ select.form-control{
 			}
 		}		
 	}
+}
+.tbl-compare{
+	td{
+		text-align: center;
+		strong{
+			font-weight: 500;
+		}
+	}
+	.title-house{
+		font-weight: 500;
+		text-align: left;
+		margin-top: 5px;
+	}	
 }

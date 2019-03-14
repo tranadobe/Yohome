@@ -9,9 +9,9 @@ $(function(){
 	// smoothScroll ---------------------------//
 	var	speed = 1000,
 		easing = 'swing',
-		pcPosition = -0,
-		tabPosition = -0,
-		spPosition = -0;
+		pcPosition = -121,
+		tabPosition = -50,
+		spPosition = -50;
 
 	$('a').not('.noscroll').click(function(){
 		var href = $(this).attr('href'),
@@ -112,24 +112,11 @@ $(function(){
             if(!$next.is(':animated')) $next.slideToggle(200).prev().toggleClass('active');		
         }
     });   
-	$w.on({
-		//load
-		'load' : function(){
-
-		},
-		//scroll
-		'scroll' : function(){
-
-		}
-	}).superResize({
-		//resize
-		resizeAfter : function(){
-
-		}
-	}).firstLoad({
+	$w.firstLoad({
 		//firstLoad
 		pc_tab : function(){
-
+			var $match = $('.box-images-detail').find('.box-lineHeight');
+			match_outerHeight($match,(abi.pc) ? 2 : (abi.tab) ? 2 : 1);	
 		},
 		sp : function(){
 			$('#mainslider').slick({
@@ -144,5 +131,35 @@ $(function(){
 			    
 			});
 		}
-	});        
+	});    
+
 });
+
+//match_outerHeight
+function match_outerHeight($o,m,w) {
+	$o.css('height','auto')
+	var foo_length = $o.length,
+		_width = $(window).width();
+
+	if (w == null) {
+		w = 0;
+	}
+
+	if(_width < w) {
+		for(var k = 0; k < foo_length; k++){
+			$o.eq(k).css('height', 'auto');
+		}
+	} else {
+		for(var i = 0 ; i < Math.ceil(foo_length / m) ; i++) {
+			var maxHeight = 0;
+			for(var j = 0; j < m; j++){
+				if ($o.eq(i * m + j).outerHeight() > maxHeight) {
+					maxHeight = $o.eq(i * m + j).outerHeight();
+				}
+			}
+			for(var k = 0; k < m; k++){
+				$o.eq(i * m + k).css('height', maxHeight);
+			}
+		}
+	}
+}

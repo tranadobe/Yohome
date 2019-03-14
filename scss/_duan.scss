@@ -285,7 +285,145 @@ CSS information
 				}
 			}
 		}
+		.list-images-detail-bds{
+			@include clearfix;
+			width: wCon(875,1440);
+			float: left;
+			@include mq(sp) {
+				width: 100%;
+			}
+			li{
+				width: wCon(368,875);
+				float: left;
+				height: 50%;
+				@include mq(sp) {
+					width: 100%;
+				}
+				&.img-detail-lg{
+					width: wCon(505,875);
+					height: 100%;
+					@include mq(sp) {
+						width: 100%;
+					}					
+				}
+				img{
+					width: 100%;
+					border:1px solid $white;
+				}
+				.box-img-iner{
+					position: relative;
+					.box-icon{
+						position: absolute;
+						z-index: 1;
+						top: 10px;
+						right: 10px;
+						span{
+							background:rgba($navatop, .4);
+							display: inline-block;
+							@include border-radius(50%);
+							width: 40px;
+							height: 40px;
+							position: relative;
+							img{
+								border:none;
+								width: auto;
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								@include transform(translate(-50%,-50%));
+							}
+						}
+					}
+					.box-img-more{
+						position: absolute;
+						width: 75px;
+						height: 75px;
+						border:1px solid $white;
+						@include border-radius(50%);
+						left: 50%;
+						top: 50%;
+						margin-left: -27.5px;
+						margin-top: -27.5px;
+						z-index: 9;
+						@include mq(sp) {
+							display: none;
+						}
+						a{
+							display: block;
+							position: relative;
+							width: 75px;
+							height: 75px;							
+							span{
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								@include transform(translate(-50%,-50%));
+								color: $white;
+								@include fsz(42);
+								font-weight: normal;
+							}
+
+						}
+					}
+
+				}
+			}
+		}		
 	}
+}
+.box-infomation{
+	width: wCon(554,1440);
+	float: right;
+	border:1px solid #DAE1E7;
+	padding: 20px;
+	@include mq(sp) {
+		width: 100%;
+		padding: 0;
+		border: none;
+		margin-bottom: 2em;
+	}
+	.tbl-info{
+		tr{
+			td{
+				padding: 30px 5px;
+				&:nth-child(n),&:nth-child(3n) {
+					width: 20%;
+					@include mq(sp) {
+						width: auto;
+					}
+				}
+				@include mq(sp) {
+					padding: 10px 5px;
+					border:none;
+				}
+				img{
+					vertical-align: baseline;
+				}
+			}
+		}
+	}
+	.btn-group-info{
+		text-align: center;
+		margin-top: 2em;
+		display: block;
+		@include mq(sp) {
+			border-top:1px solid #DAE1E7;
+			margin-top: 1em;
+			padding-top: 1em;
+			text-align: left;
+		}		
+		button{
+			@include cV(margin-right,1em,.2em,.1em);
+			float: none;
+			@include border-radius(4px);
+		}
+		.btn-info{
+			background:$navatop;
+			border-color: $navatop;
+		}
+		
+	}
+
 }
 .tabs-repsonsive{
 	@include clearfix;
@@ -297,8 +435,6 @@ CSS information
 }	
 .box-tabs-page-detail{
 	@include clearfix;
-	border-bottom: 1px solid #DAE1E7;
-	margin-bottom: 2em;	
 	.list-tabs-page-detail{
 		@include mq(sp) {
 			min-width: 520px;
@@ -730,5 +866,157 @@ CSS information
 	}	
 	.slick-arrow{
 		@include btn_slider(#FFF,#000,small); // or default mixin btn_slider()
+	}
+}
+.box-project-near{
+	.box-project-favorite{
+		border-top: 1px solid #DAE1E7;
+		padding-top: 3em;
+	}
+}
+
+.widget-title-group{
+	@include fsz(20);
+	font-weight: bold;
+	font-family: $muli;
+	text-transform: uppercase;
+	margin-bottom: .7em;
+	line-height: 1.8;
+	position: relative;
+}
+
+.box-dutoan-khoanvay{
+	padding: 15px 0;
+	border: 1px solid #D3D9E1;
+	.form-inline{
+		.form-control{
+			max-width: 90px;
+			margin-right: 5px;
+			@include mq(sp) {
+				margin-right: 0;
+				max-width: 70px;
+			}
+		}
+		@include mq(sp) {
+			padding-left: 0;
+			.form-group{
+				display: inline-block;
+			}
+		}
+	}
+	.box-dutoan-inner{
+		padding: 15px;		
+		.row{
+			margin-bottom: 15px;
+		}
+		.ui-widget.ui-widget-content{
+			margin-top: 10px;
+			background: #D3D9E1;
+			@include border-radius(11px);
+			border:none;
+		}
+		.ui-widget-header{
+			background:#0999D8;
+			@include border-radius(11px);
+		}
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, .ui-button.ui-state-disabled:hover, .ui-button.ui-state-disabled:active{
+			background:#0999D8;
+			border:none;
+			height: 1.6em;
+			width: 10px;
+			top: -.4em;
+			@include border-radius(11px);
+		}
+	}
+	.box-paymentform{
+		padding: 15px;
+		border-bottom: 1px solid #D3D9E1;
+		border-top: 1px solid #D3D9E1;
+		text-align: center;
+		@include mq(sp) {
+			text-align: left;
+		}
+		.radio{
+			margin: 0 10px;
+			input{
+				margin-right: 5px;
+			}
+		}
+	}
+	.box-result{
+		padding: 15px;
+		.list-money-number{
+			margin-bottom: 2em;
+			@include clearfix;
+			@include mq(sp) {
+				padding-bottom: 3em;
+			}
+			li{
+				@include grid_col(3,0,0);
+				&:not(:last-child) {
+					border-right: 1px solid #D3D9E1;
+					@include mq(sp) {
+						border:none;
+					}
+				}
+				&:not(:first-child) {
+					padding-left: 3%;
+				}
+				p{
+					font-weight: 500;
+					@include fsz(16);
+					&.txt-number {
+						@include fsz(18);
+					}
+					&.text-danger{
+						color: #EE3817;
+					}
+				}
+				@include mq(sp) {
+					width: 100%;
+					margin-bottom: 1em;
+				}
+			}
+		}
+		.title-mount{
+			@include fsz(24);
+			font-weight: 500;
+			color: $baseColor;
+			@include mq(sp) {
+				position: absolute;
+				bottom: 0;
+				width: 180%;
+			}
+		}
+		.mount-number{
+			color: $text-primary;
+			font-weight: normal;
+			font-size: 28px;
+			line-height: 33px;			
+		}
+		.view-result{
+			border-left: 1px solid #D3D9E1;
+			padding-left: 1em;
+		}
+		.box-result-number{
+			background:transparent url('../images/bg_result.png') left top no-repeat;
+			background-size: contain;
+			width: 162px;
+			height: 160px;
+			margin: auto;
+			position: relative;
+			@include mq(sp) {
+				width: 142px;
+				height: 140px
+			}
+			span{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				@include transform(translate(-50%,-50%));
+				@include fsz(28);
+				color: $text-primary;
+			}
+		}
 	}
 }

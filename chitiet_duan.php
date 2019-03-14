@@ -92,19 +92,19 @@
                     <div class="box-tab-inner-link-detail view_pc-tab">
                         <div class="container">
                             <ul class="list-link">
-                                <li class="active"><a href="#">TỔNG QUAN</a></li>
-                                <li><a href="#">TIỆN ÍCH</a></li>
-                                <li><a href="#">HẠ TẦNG</a></li>
-                                <li><a href="#">THIẾT KẾ MẶT BẰNG</a></li>
-                                <li><a href="#">CHỦ ĐẦU TƯ</a></li>
-                                <li><a href="#">ĐỐI TÁC THỰC HIỆN</a></li>
-                                <li><a href="#">VỊ TRÍ</a></li>
+                                <li class="active"><a href="#lnk-project01">TỔNG QUAN</a></li>
+                                <li><a href="#lnk-project02">TIỆN ÍCH</a></li>
+                                <li><a href="#lnk-project03">HẠ TẦNG</a></li>
+                                <li><a href="#lnk-project04">THIẾT KẾ MẶT BẰNG</a></li>
+                                <li><a href="#lnk-project05">CHỦ ĐẦU TƯ</a></li>
+                                <li><a href="#lnk-project06">ĐỐI TÁC THỰC HIỆN</a></li>
+                                <li><a href="#lnk-project07">VỊ TRÍ</a></li>
                             </ul>
                         </div>
                     </div><!-- /box-tab-inner-link-detail --> 
                     <div class="box-main-content-page-detail container">
                         <div class="box-content">
-                            <div class="box-collapse-warrper">
+                            <div class="box-collapse-warrper" id="lnk-project01">
                                 <h3 class="widget-title">Tổng quan</h3>
                                 <div class="box-collapse-inner">
                                     <div class="txt-overview">
@@ -175,7 +175,7 @@
                                     <div class="box-banner mb0"><a href="#"><img src="images/banner_5.png" alt=""></a></div>
                                 </div>
                             </div><!--/.box-collapse-warrper-->
-                            <div class="box-collapse-warrper">
+                            <div class="box-collapse-warrper" id="lnk-project02">
                                 <h3 class="widget-title">TIỆN ÍCH</h3>
                                 <div class="box-collapse-inner border-inner">
                                     <h5 class="title-utilities">Cơ sở vật chất</h5>
@@ -235,7 +235,7 @@
                                     <div class="read-more text-right mt20"><a href="#">Xem tiếp</a></div>                               
                                 </div>
                             </div><!--/.box-collapse-warrper-->
-                            <div class="box-collapse-warrper">
+                            <div class="box-collapse-warrper" id="lnk-project03">
                                 <h3 class="widget-title">HẠ TẦNG</h3>
                                 <div class="box-collapse-inner border-inner">
                                     <ul class="list-utilities">
@@ -321,7 +321,7 @@
                                                                    
                                 </div>
                             </div><!--/.box-collapse-warrper-->  
-                            <div class="box-collapse-warrper">
+                            <div class="box-collapse-warrper" id="lnk-project04">
                                 <h3 class="widget-title">THIẾT KẾ MẶT BẰNG</h3>
                                 <div class="box-collapse-inner border-inner">
                                     <div class="box-responsive">
@@ -333,7 +333,7 @@
                                     </div>                                                               
                                 </div>
                             </div><!--/.box-collapse-warrper-->
-                            <div class="box-collapse-warrper">
+                            <div class="box-collapse-warrper" id="lnk-project05">
                                 <h3 class="widget-title">CHỦ ĐẦU TƯ</h3>
                                 <div class="box-collapse-inner border-inner">
                                     <div class="box-investor">
@@ -346,7 +346,7 @@
                                     </div>
                                 </div>
                             </div><!--/.box-collapse-warrper-->           
-                            <div class="box-collapse-warrper">
+                            <div class="box-collapse-warrper" id="lnk-project06">
                                 <h3 class="widget-title">Đối tác thực hiện</h3>
                                 <div class="box-collapse-inner border-inner">
                                     <ul class="list-partner">
@@ -398,7 +398,7 @@
                         <div class="bn-fixed box-banner-left"><a href="#"><img src="images/banner_1.png" alt=""></a></div>
                         <div class="bn-fixed  box-banner-right"><a href="#"><img src="images/banner_1.png" alt=""></a></div>
                         <div class="clearfix"></div>
-                        <div class="box-collapse-warrper box-map">
+                        <div class="box-collapse-warrper box-map" id="lnk-project07">
                             <h3 class="widget-title">Vị trí - tiện ích<br class="view_sp"> xung quanh</h3>
                             <div class="box-collapse-inner">
                                 <img src="images/vitri.png" alt="">

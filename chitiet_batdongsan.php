@@ -79,7 +79,7 @@
     					</div>
     				</li>    				    				    				    				
     			</ul>
-                <div class="box-lineHeight box-infomation view_pc">
+                <div class="box-lineHeight box-infomation-bds view_pc">
                     <table class="tbl-info">
                         <tr>
                             <td><img src="images/ic_noithat03.png" alt=""> Phòng ngủ:</td>
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                         </div><!-- /box-detail-project --> 
-                        <div class="box-lineHeight box-infomation view_sp">
+                        <div class="box-lineHeight box-infomation-bds view_sp">
                             <table class="tbl-info">
                                 <tr>
                                     <td><img src="images/ic_noithat03.png" alt=""> Phòng ngủ:</td>

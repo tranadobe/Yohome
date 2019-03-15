@@ -100,6 +100,10 @@ $(function(){
 		}
 	});	 
 
+	$('.button-advance-search').click(function(){
+		$('.box-advance-inner').slideToggle(200);
+	});
+
     $('.widget-title').click(function(){
         if(!$(this).is('.sp_only') || $(this).is('.sp_only') && abi.sp) {
             var $next = $(this).next();

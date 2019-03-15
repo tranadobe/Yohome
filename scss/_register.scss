@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : base.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+#dang-tin-bds{
+	background: #f5f8fb;
+	.topicpath ul{
+		float: none;
+		@include mq(pc) {
+			width: 1200px;
+		}	
+
+	}
+	input.form-control,textarea.form-control{
+		background: none;
+	}
+	select.form-control{
+		background: url(../images/arrow.png) no-repeat 95% 50% transparent;
+	}
+}
+.box-step-register{
+	@extend %cf;
+	background:#0999D8;
+	margin-bottom: 30px;
+	ul{
+		@include mq(sp) {
+			padding: 12px 5px;
+		}
+		li{
+			float: left;
+			position: relative;
+			@include cV(padding,15px 30px,12px 15px,7px 8px);
+			color: rgba($white,.7);
+			@include mq(pc) {
+				margin-right: 80px;
+				&:not(:last-child){
+					&:before{
+						content: "";
+						width: 70px;
+						height: 1px;
+						position: absolute;
+						right: -80px;
+						top: 50%;
+						@include transform(translate(0,-50%));
+						background:rgba($white,.7);
+					}
+				}
+			}
+			@include mq(tab) {
+				margin-right: 10px;
+				&:not(:last-child){
+					&:before{
+						content: "";
+						width: 25px;
+						height: 1px;
+						position: absolute;
+						right: -20px;
+						top: 50%;
+						@include transform(translate(0,-50%));
+						background:rgba($white,.7);
+					}
+				}
+			}			
+			&:last-child{
+				margin-right: 0;
+			}			
+			span{
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 40px;
+				text-transform: uppercase;
+				@include mq(sp) {
+					font-size: 80%;
+					line-height: 10px;
+				}
+				.fa-check-circle{
+					position: absolute;
+					right: -9px;
+					top: -5px;
+					display: none;
+					@include mq(sp) {
+						right: -5px;
+						top: 0px;
+						font-size: 80%;
+					}
+				}
+				&.number{
+					@include cV(margin-right,15px,10px,2px);
+					@include mq(pc_tab) {
+						border:1px solid $white;
+						width: 40px;
+						height: 40px;
+						@include border-radius(50%);
+						display: inline-block;
+						position: relative;
+						em{
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							@include transform(translate(-50%,-50%));
+						}
+					}
+				}
+			}
+			&.active{
+				color: $white;
+				@include mq(pc_tab) {
+					span.number{
+						background: $white;
+						color: #0999D8;
+					}
+				}
+				&:after{
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 8px 8px 8px;
+					border-color: transparent transparent $white transparent;		
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					@include transform(translate(-50%,0));			
+				}
+			}
+			&.success{
+				span{
+					color: $white;
+					&.number{
+						color: $white;
+						@include mq(pc_tab) {
+							background:#87CF39;
+							border-color: #87CF39;							
+						}
+					}
+				}
+				.fa-check-circle{
+					color: #87CF39;
+					display: block;
+				}
+			}
+		}
+	}
+}
+.register-form-content{
+	padding: 0 15px 15px;
+	@include clearfix;
+	.row{
+		margin-bottom: 1.5em;
+	}
+	.box-text-neo{
+		padding: 1em 0;
+	}
+	.dientich{
+		position: relative;
+		.sub-text{
+			position: absolute;
+			left: 101%;
+			top: 60%;
+			@include transform(translate(0,-50%));
+		}
+	}
+	.form-group{
+		position: relative;
+		.help.text-danger{
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+
+.box-sidebar-content{
+	@include clearfix;
+	background:$white;
+	border: 1px solid #E1E9F1;
+	box-sizing: border-box;	
+	border-top: 5px solid #1D2C4C;
+	h3{
+		padding: 30px 10px 15px;
+		font-weight: bold;
+		@include fsz(14);
+		line-height: 18px;
+		font-family: $muli;
+	}
+	.product-item{
+		@include border-radius(0);
+		border:none;
+		.box-price{
+			margin-bottom: 20px;
+		}		
+		.box-item{
+			border-top: 1px solid #D7DCE3;
+			margin-top: 0;
+			padding-top: 1em;
+			h4{
+				font-family: $muli;
+				font-style: normal;
+				font-weight: bold;
+				@include fsz(14);
+				line-height: 18px;	
+				margin-bottom: 15px;			
+			}
+			.list-basic{
+				@include clearfix;
+				li{
+					@include grid_col(2,1%,0);
+					margin-bottom: 15px;
+					img{
+						vertical-align: middle;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -91,8 +91,8 @@ body {
 	@include box-sizing(border-box);
 }
 
-.container-fluid{
-
+.text-danger{
+	color: #EE3817;
 }
 .pdl0{
 	padding-left: 0;
@@ -183,6 +183,7 @@ select.form-control{
 .topicpath{
 	@include clearfix;
 	@include cV(padding,.5em 0, .5em 0);
+	background:$white;
 	ul{
 		float: left;
 		@include clearfix;
@@ -286,4 +287,23 @@ select.form-control{
 		text-align: left;
 		margin-top: 5px;
 	}	
+}
+.box-page-content{
+	@include clearfix;
+	@include cV(margin-top,50px,40px,20px);
+	.box-main-content{
+		width: wCon(870,1170);
+		float: left;
+		@include mq(tab_sp) {
+			width: 100%;
+		}
+	}
+	.box-sidebar-content{
+		width: wCon(270,1170);
+		float: right;
+		@include mq(sp) {
+			width: 100%;
+		}
+
+	}
 }

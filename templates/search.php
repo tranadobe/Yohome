@@ -21,7 +21,7 @@
                     <div class="box-input-search">
                         <input type="text" class="form-control" placeholder="Nhập tên địa chỉ, quận, dự án...">
                     </div>
-                    <div class="box-advance-button">Nâng cao <i class="fa fa-angle-down"></i></div>
+                    <div class="box-advance-button button-advance-search">Nâng cao <i class="fa fa-angle-down"></i></div>
                     <span class="box-button-search">
                         <button class="btn btn-primary" type="button"><span class="view_pc-tab">Tìm kiếm</span><i class="fa fa-search view_sp"></i></button>
                     </span>
@@ -66,7 +66,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="box-close"><a href="#">Đóng</a></div>
+                <div class="box-close"><a href="javascript:void(0)" class="button-advance-search">Đóng</a></div>
             </div>                                                    
         </div><!-- /#panel01 -->
         <div id="panel02" class="panel_inner">
@@ -84,7 +84,7 @@
                     <div class="box-input-search">
                         <input type="text" class="form-control" placeholder="Nhập tên địa chỉ, quận, dự án...">
                     </div>
-                    <div class="box-advance-button">Nâng cao <i class="fa fa-angle-down"></i></div>
+                    <div class="box-advance-button button-advance-search">Nâng cao <i class="fa fa-angle-down"></i></div>
                     <span class="box-button-search">
                         <button class="btn btn-primary" type="button"><span class="view_pc-tab">Tìm kiếm</span><i class="fa fa-search view_sp"></i></button>
                 </div><!-- /input-group -->
@@ -128,7 +128,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="box-close"><a href="#">Đóng</a></div>
+                <div class="box-close"><a href="javascript:void(0)" class="button-advance-search">Đóng</a></div>
             </div>
             
         </div><!-- /#panel02 -->

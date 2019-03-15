@@ -373,6 +373,7 @@ CSS information
 		border-left: 1px solid #D7DCE3;	
 		@include cV(display,table-cell,table-cell,block);
 		vertical-align: top;
+		cursor: pointer;
 		@include mq(sp) {
 			width: 100%;
 			@include clearfix;

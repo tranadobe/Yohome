@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : homepage.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+.topicpath-border{
+	border-bottom: 1px solid #D3D9E1;
+	margin-bottom: 20px;
+}
+.title-page-tuvan{
+	background:transparent url('../images/dangkytuvan/img_hero.png') center top no-repeat;
+	background-size: cover;
+	.container{
+		min-height: 250px;
+		position: relative;
+		h2{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			z-index: 9;
+			@include fsz(40);
+			font-weight: bold;
+			@include transform(translate(0,-50%));
+			color: $white;
+			text-align: center;
+			width: 100%;
+			font-family: $muli;
+		}
+	}
+}
+.page-tuvan{
+	padding-bottom: 80px;
+
+}
+.box-intro{
+	@include clearfix;
+	padding: 40px 0;
+	@include cV(margin-bottom,80px,60px,40px);
+	.list-intro{
+		@include clearfix;
+		div.item-intro{
+			@include grid_col(3,3%,0);
+			.item-inner{
+				border:1px solid #D3D9E1;
+				@include border-radius(5px);
+				@include cV(padding,50px 40px,50px 20px,40px 10px 60px);
+				text-align: center;
+				margin-right: 1px;
+				@include mq(sp) {
+					padding-bottom: 60px;
+				}
+			}
+			.box-img{
+				margin-bottom: 30px;
+				text-align: center;
+				img{
+					margin: auto;
+				}
+			}
+			h4{
+				@include fsz(18);
+				line-height: 1.6;
+				text-align: center;
+			}
+			@include mq(sp) {
+				width: 100%;
+				margin-right: 0;
+				text-align: center;
+			}
+		}
+	}
+}
+.box-thanhvien{
+	@include clearfix;
+	.list_thanhvien{
+		@include clearfix;
+		.item-thanhvien{
+			@include grid_col(5,wCon(30),0);
+			.inner{
+				border:1px solid #D7DCE3;
+				@include border-radius(5px);
+				padding:60px 20px;
+				text-align: center;
+				margin-right: 1px;
+			}
+			.box-img{
+				margin-bottom: 40px;
+				img{
+					margin: auto;
+				}
+			}
+			h4{
+				@include fsz(18);
+				font-weight: bold;
+				line-height: 1.6
+			}
+			.btn-default{
+				border-color: $text-primary;
+				color: $text-primary;
+				margin-top: 80px;
+				padding:12px 20px;
+			}
+			@include mq(sp) {
+				width: 100%;
+				margin-right: 0;
+				text-align: center;
+			}			
+		}
+	}
+}
+.slider-one{
+	.slick-dots{
+		@include dots($text-primary,#EEEEEE,10px,center); // or default mixin dots();
+	}	
+   .slick-list{
+    padding: 0!important;
+    overflow: visible !important;
+   }
+}
+.list-donghanhcungban{
+	@include clearfix;
+	li{
+		@include clearfix;
+		position: relative;
+		@include cV(height,530px,530px,auto);
+		@include cV(margin-bottom,80px,60px,40px);
+		@include mq(sp) {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.box-img{
+			float: right;
+			width: wCon(530,1170);
+			@include mq(sp) {
+				display: none;
+			}
+		}
+		.box-text{
+			width: wCon(530,1170);
+			float: left;
+			@include mq(pc) {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				@include transform(translate(0,-50%));
+			}
+			@include mq(sp) {
+				width: 100%;
+			}
+		}
+		ol{
+			@include cV(margin-bottom,60px,40px,20px);
+			li{
+				height: auto;
+				padding:10px 0;
+				margin-bottom: 0;
+				img{
+					vertical-align: middle;
+					margin-right: 10px;
+					@include mq(sp) {
+						float: left;
+						margin-bottom: 15px;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+		&.right{
+			.box-img{
+				float: left;
+			}
+			.box-text{
+				@include mq(pc) {
+					left: inherit;
+					right: 0;
+				}
+			}
+		}
+		.box-btn{
+			@include mq(sp) {
+				text-align: center;
+			}
+		}
+	}
+}

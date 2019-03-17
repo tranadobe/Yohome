@@ -90,16 +90,6 @@ body {
 * {
 	@include box-sizing(border-box);
 }
-
-.text-danger{
-	color: #EE3817;
-}
-.pdl0{
-	padding-left: 0;
-}
-.mt20 {
-	margin-top: 20px;
-}
 .container {
 	position: relative;
   @include mq(pc) {
@@ -177,6 +167,13 @@ select.form-control{
 .mb20{
 	margin-bottom: 20px;
 }
+.text-danger{
+	color: #EE3817;
+}
+.pdl0{
+	padding-left: 0;
+}
+
 /* -----------------------------------------------------------
 	#topicpath
 ----------------------------------------------------------- */

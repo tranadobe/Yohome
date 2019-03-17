@@ -8,7 +8,7 @@
 </head>
 
 <body id="<?php echo $page; ?>">
-    <?php include "./templates/header_login.php"; ?>
+    <?php include "./templates/header_no_search.php"; ?>
     <div id="contents">
 		<div class="topicpath view_pc-tab">
 			<ul class="container">

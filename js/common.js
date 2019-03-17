@@ -134,6 +134,15 @@ $(function(){
 			  nextArrow:'<div type="button" class="slick-next"></div>',	
 			    
 			});
+			$('.slider-one').slick({
+				dots: true,
+				infinite: true,
+				speed: 500,
+				autoplay:true,
+				slidesToShow: 1,
+				adaptiveHeight: false,
+				arrows:false
+			});			
 		}
 	});    
 

@@ -8,7 +8,7 @@
 </head>
 
 <body id="<?php echo $page; ?>">
-    <?php include "./templates/header_login.php"; ?>
+    <?php include "./templates/header_no_search.php"; ?>
     <div id="contents">
 		<div class="topicpath view_pc-tab">
 			<ul class="container">
@@ -218,7 +218,7 @@
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="form-group">
 									<label for="giaytophaply">Lên lịch xem nhà</label>
-									<input type="text" class="form-control" id="tenduan" placeholder="Chọn ngày/giờ">
+									<span class="date-picker"><input type="text" class="form-control col-lg-1" id="tenduan" placeholder="Chọn ngày/giờ"><i class="fa fa-calendar"></i></span>
 								</div>
 							</div>
 						</div>
@@ -226,7 +226,12 @@
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="form-group">
 									<label for="giaytophaply">Hình ảnh  <span class="text-danger">*</span>  <em>Hình ảnh đính kèm tăng hiệu quả bán hàng</em></label>
-									<div class="box-file">da;dla;dld;</div>
+									<div class="box-file">
+										<div class="box-title-click">
+											<img src="images/ic_dangtin/photo.png" alt="">
+											<p>Click chọn hoặc kéo thả ảnh<br>Kích thước ảnh không quá 4M</p>
+										</div>
+									</div>
 									<p class="text-danger"><i>Vui lòng tải tối thiểu 5 ảnh, tối đa 12 ảnh </i></p>
 								</div>
 							</div>
@@ -236,35 +241,77 @@
 								<div class="box-banner"><a href="#"><img src="images/banner_4.png" alt=""></a></div>
 							</div>
 						</div>	
-						<div class="row">
+						<div class="row box-uliti-choose">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="form-group">
 								  <label class="col-md-2 control-label" for="radios">Nội Thất</label>
 								  <div class="col-md-10"> 
-								    <label class="radio-inline" for="radios-0">
-								      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-								      Chưa có
+								    <label class="radio-inline" for="radios01">
+								    	<input type="radio" name="radios" id="radios01" value="1" checked>Chưa có
 								    </label> 
-								    <label class="radio-inline" for="radios-1">
-								      <input type="radio" name="radios" id="radios-1" value="2">
-								      Cơ bản
+								    <label class="radio-inline" for="radios02">
+								    	<input type="radio" name="radios" id="radios02" value="2">Cơ bản
 								    </label>
-								    <label class="radio-inline" for="radios-2">
-								      <input type="radio" name="radios" id="radios-2" value="3">
-								      Đầy đủ
+								    <label class="radio-inline" for="radios03">
+								      <input type="radio" name="radios" id="radios03" value="3">Đầy đủ
 								    </label>
 								  </div>
-								</div>								
+								</div>	
+								<div class="box-ulti-inner">
+									<ul>
+										<?php for ($i=1; $i <21 ; $i++) { ?>
+											<li>
+												<label for="id_dangtin<?php echo $i; ?>">
+													<input type="checkbox" id="id_dangtin<?php echo $i; ?>" value=""> 
+													<img src="images/ic_dangtin/ic_dangtin<?php echo $i; ?>.png" alt="">
+													Vòi hoa sen
+												</label>
+											</li>
+										<?php }?>
+									</ul>
+								</div>							
 							</div>
-						</div>											
+						</div>		
+						<div class="row box-uliti-choose">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="form-group">
+								  <label class="col-md-2 control-label" for="radios1">Tiện nghi</label>
+								  <div class="col-md-10"> 
+								    <label class="radio-inline" for="radios04">
+								    	<input type="radio" name="radios1" id="radios04" value="1" checked>Chưa có
+								    </label> 
+								    <label class="radio-inline" for="radios05">
+								    	<input type="radio" name="radios1" id="radios05" value="2">Cơ bản
+								    </label>
+								    <label class="radio-inline" for="radios06">
+								      <input type="radio" name="radios1" id="radios06" value="3">Đầy đủ
+								    </label>
+								  </div>
+								</div>	
+								<div class="box-ulti-inner">
+									<ul>
+										<?php for ($i=1; $i <11 ; $i++) { ?>
+											<li>
+												<label for="id_dangtin0<?php echo $i; ?>">
+													<input type="checkbox" id="id_dangtin0<?php echo $i; ?>" value=""> 
+													<img src="images/ic_dangtin/ic_dangtin<?php echo $i; ?>.png" alt="">
+													Vòi hoa sen
+												</label>
+											</li>
+										<?php }?>
+									</ul>
+								</div>							
+							</div>
+						</div>																
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-								<button type="button" class="btn btn-primary">Lưu & Tiếp tục</button>
+								<button type="button" class="btn btn-default pull-left btn-lg">Quay lại</button>
+								<button type="button" class="btn btn-primary pull-right btn-lg">Lưu & Tiếp tục</button>
 							</div>
 						</div>			
 					</div>
 
-					<div class="box-banner"><a href="#"><img src="images/banner06.png" alt=""></a></div>					
+					<div class="box-banner mb0"><a href="#"><img src="images/banner06.png" alt=""></a></div>					
 				</div>
 				<div class="box-sidebar-content view_pc">
 					<div class="box-bds-item">

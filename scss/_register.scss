@@ -5,6 +5,19 @@ CSS information
  author     : Le Duc Anh
  website : mauthietke.info
 =================================================================== */
+.bg-white{
+	background:$white;
+	margin-bottom: 30px;
+}
+.mb30{
+	margin-bottom: 30px;
+	button.pull-right{
+		@include cV(margin-left,10px,5px,5px);
+	}
+	.btn-default{
+		background:$white;
+	}
+}
 #dang-tin-bds{
 	background: #f5f8fb;
 	.topicpath ul{
@@ -170,6 +183,46 @@ CSS information
 			right: 0;
 		}
 	}
+	.date-picker{
+		display: block;
+		max-width:180px;
+		position: relative;
+		@extend %cf;
+		.fa-calendar{
+			position: absolute;
+			right: .7em;
+			top: 50%;
+			@include transform(translate(0,-50%));
+			z-index: 1;
+		}
+	}
+	.form-horizontal{
+		.control-label{
+			text-align: left;
+			font-weight: normal;
+		}
+		.col-sm-7{
+			@include mq(pc) {
+				padding-left: 0;
+			}
+		}
+		.col-md-12{
+			.checkbox{
+				color: rgba(#33415D,.6);
+				@include fsz(12);
+			}
+		}
+		.mb15{
+			margin-bottom: 20px;
+		}
+		.input-group-addon:last-child{
+			background:$text-primary;
+			color: $white;
+			border-color: $text-primary;
+			padding: 6px 8px;
+			font-size: 80%;
+		}
+	}
 }
 
 .box-sidebar-content{
@@ -191,6 +244,12 @@ CSS information
 		.box-price{
 			margin-bottom: 20px;
 		}		
+		.box-view-control{
+			.text-left{
+				font-size: 90%;
+				padding-right: 0;
+			}
+		}
 		.box-item{
 			border-top: 1px solid #D7DCE3;
 			margin-top: 0;
@@ -215,5 +274,59 @@ CSS information
 				}
 			}
 		}
+	}
+}
+.box-file{
+	@include border-radius(4px);
+	border:1px solid #D7DCE3;
+	background:#F8F8F8;
+	position: relative;
+	min-height: 210px;
+	@include clearfix;
+	.box-title-click{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(translate(-50%,-50%));
+		z-index: 1;
+		text-align: center;
+	}
+}
+.box-uliti-choose{
+	.form-group{
+		@include clearfix;
+		margin-bottom: 2em;
+	}
+}
+.box-ulti-inner{
+	@include clearfix;
+	padding: 0 15px;
+	li{
+		@include grid_col(5,1%,0);
+		margin-bottom: 1em;
+		min-height: 40px;
+		input{
+			vertical-align: middle;
+		}
+		img{
+			vertical-align: middle;
+			margin: 0 5px;
+		}
+		label{
+			font-weight: normal;
+		}
+	}
+}
+.box-money-total{
+	text-align: center;
+	margin: 3em 0 2em;
+	h3{
+		@include fsz(36);
+		font-weight: 500;
+	}
+	.txt-money{
+		color: $text-primary;
+		@include fsz(24);
+		font-weight: normal;
 	}
 }

@@ -6,8 +6,15 @@
                 <div class="navbar-brand">Chúc mừng Quý khách ABC giao dịch thành công!</div>
                 <ul class="nav navbar-nav pull-right view_pc-tab">
                     <li><a href="#"><i class="fa fa-phone"></i>1800 1234</a></li>
-                    <li class="lnk-register"><a href="#">Đăng ký</a></li>
-                    <li class="lnk-login"><a href="#">Đăng nhập</a></li>
+                    <li class="lnk-information">
+                        <a href="javascript:void(0)"><span><img src="<?php echo LOCATION;?>images/cho_vay_mua_nha.png" alt=""></span> Minhtho <i class="fa fa-angle-down"></i></a>
+                        <ul class="sub-menu-acc">
+                            <li><a href="#">Trang tài khoản</a></li>
+                            <li><a href="#">Trang quản lý đăng tin</a></li>
+                            <li><a href="#">Trang quản lý tin yêu thích</a></li>
+                            <li class="logout"><a href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -41,39 +48,14 @@
                 </div>
                 <div class="link-vip pull-right view_pc-tab">
                     <ul class="btn-link-vip">
-                        <li><a href="#" class="btn btn-default" data-toggle="modal" data-target="#uuDaiVip"><i class="fa fa-gift"></i> Ưu đãi VIP</a></li>
+                        <li><button class="btn btn-default" data-toggle="modal" data-target="#uuDaiVip"><i class="fa fa-gift"></i> Ưu đãi VIP</button></li>
                         <li class="btn-free"><button class="btn btn-danger" data-toggle="modal" data-target="#modalDangtin">Đăng tin miễn phí</button></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="box-advance-search">
-            <h2>Kết nối tạo giá trị cho ngôi nhà mơ ước</h2>
-            <?php include "search.php"; ?>  
-        </div>
-        <div class="box-count-down">
-            <ul>
-                <li>
-                    <div class="count-number">2000+</div>
-                    <div class="count-lable">Tin đăng mới<br>hàng tháng</div>
-                </li>
-                <li>
-                    <div class="count-number">15000+</div>
-                    <div class="count-lable">Thành viên<br>YouHomers</div>
-                </li>
-                <li>
-                    <div class="count-number">5000+</div>
-                    <div class="count-lable">Kết nối<br>thành công</div>
-                </li>
-                <li>
-                    <div class="count-number">300+</div>
-                    <div class="count-lable">Đối tác trên<br>toàn quốc</div>
-                </li>
-            </ul>
-        </div>
+    <div class="container page-has-title">
+        <h2>Tin tức bất động sản</h2>
     </div>
-
 </div><!-- /#header -->
-

@@ -77,3 +77,308 @@ CSS information
 		}
 	}
 }
+.list-blogs{
+	@include clearfix;
+	li{
+		@include clearfix;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #D3D9E1;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.img{
+			width: wCon(370,840);
+			float: left;
+			img{
+				width: 100%;
+			}
+			@include mq(sp) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+		.box-caption{
+			width: wCon(445,840);
+			float: right;
+			@include mq(sp) {
+				width: 100%;
+			}			
+			h4{
+				@include fsz(28);
+				font-family: $muli;
+				margin-bottom: 15px;
+				font-weight: bold;
+				@include mq(sp) {
+					@include fsz(24);
+				}
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+	.box-banner{
+		border-bottom: 1px solid #D3D9E1;
+		padding-bottom: 30px;
+		img{
+			width: 100%;
+		}
+	}
+}
+.box-meta{
+	margin-bottom: 1em;
+	a{
+		margin-right: 1em;
+
+	}
+	span{
+		display: inline-block;
+		position: relative;
+		padding-left: 1em;
+		margin-right: .5em;
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			@include transform(translate(0, -50%));
+			width: 5px;
+			height: 5px;
+			background: #EEEEEE;
+			@include border-radius(50%);						
+		}
+	}
+}
+.box-main-archive{
+	@include clearfix;
+	padding-top: 0px;
+	h1{
+		@include fsz(28);
+		font-family: $muli;
+		margin-bottom: 15px;
+	}
+	.box-list-archive{
+		width: wCon(840,1170);
+		float: left;
+		@include mq(sp) {
+			width: 100%;
+		}
+	}
+	.box-sidebar-archive{
+		width: wCon(270,1170);
+		float: right;
+		@include mq(sp) {
+			width: 100%;
+		}
+	}
+}
+.box-menu-cate{
+	@include border-radius(3px);
+	background: $white;
+	border: 1px solid #D3D9E1;
+	@include box-shadow(0px 8px 20px rgba(0, 0, 0, 0.1));
+	padding: 20px 30px;
+	h3{
+		@include fsz(16);
+		font-family: $muli;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	ul{
+		li{
+			a{
+				display: block;
+				padding: 10px 0 10px 1em;
+				position: relative;
+				font-weight: bold;
+				color: $baseColor;
+				&:before{
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					@include transform(translate(0, -50%));
+					width: 5px;
+					height: 5px;
+					background: #EEEEEE;
+					@include border-radius(50%);						
+				}				
+			}
+			&.active{
+				position: relative;
+				&:before{
+					content: "";
+					position: absolute;
+					left: -30px;
+					width: 2px;
+					height: 100%;
+					background: $text-primary;
+				}
+				a{
+					color: $text-primary;
+				}
+			}
+		}
+	}
+}
+.box-mailbox{
+	@include border-radius(3px);
+	background: $navatop;
+	border: 1px solid #D3D9E1;
+	padding: 20px 18px;	
+	text-align: center;
+	color: $white;
+	margin: 30px 0;
+	.img{
+		margin-bottom: 20px;
+	}
+	h4{
+		margin-bottom: 1em;
+		font-family: $muli;
+		@include fsz(16);
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.text{
+		@include fsz(14);
+		font-weight: 300;
+		line-height: 1.6;
+		margin-bottom: 10px;
+	}
+	.box-input{
+		position: relative;
+		margin-bottom: 15px;
+		.fa{
+			position: absolute;
+			right: 1em;
+			top: 50%;
+			@include transform(translate(0,-50%));
+			color: $baseColor;
+		}
+	}
+}
+.box-baivietnoibat{
+	@include clearfix;
+	h3{
+		text-transform: uppercase;
+		@include fsz(16);
+		font-family: $muli;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #D3D9E1;
+		font-weight: bold;
+	}
+	.list-baivietnoibat{
+		@include clearfix;
+		li{
+			@include clearfix;
+			border-bottom: 1px solid #D3D9E1;
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			&:last-child {
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+			.box-img{
+				width: wCon(100,270);
+				float: left;
+			}
+			.box-caption{
+				width: wCon(155,270);
+				float: right;
+				h4{
+					@include fsz(14);
+					font-family: $muli;
+					font-weight: bold;
+					line-height: 1.4;
+					a{
+						color: #1A2B48;
+					}
+				}
+				.date{
+					color: #72788E;
+					@include fsz(12);
+				}
+			}
+		}
+	}
+}
+
+.box-cungchuyenmuc{
+	@include clearfix;
+	h3{
+		text-transform: uppercase;
+		@include fsz(16);
+		font-family: $muli;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		font-weight: bold;
+	}
+	.list-cungchuyenmuc{
+		@include clearfix;
+		li{
+			@include clearfix;
+			@include grid_col(3,3%,0);
+			@include mq(sp) {
+				width: 100%;
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
+			.box-img{
+				img{
+					width: 100%;
+				}
+			}
+			.box-caption{
+				width: 100%;
+				margin-top: 12px;
+				h4{
+					@include fsz(18);
+					font-family: $muli;
+					font-weight: bold;
+					line-height: 1.4;
+					a{
+						color: #1A2B48;
+					}
+				}
+				.date{
+					color: #525975;
+					@include fsz(14);
+				}
+			}
+		}
+	}
+}
+.box-reg-nhanmail{
+	padding: 40px 0;
+	margin-bottom: -30px;
+	margin-top: 50px;
+}
+.box-reg-mail{
+	@include clearfix;
+	.box-alert-mail{
+		.box-img{
+			float: left;
+			margin-right: 20px;
+			vertical-align: middle;
+		}
+		h4{
+			@include fsz(24);
+			font-family: $muli;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+	}
+	.box-input-regmail{
+		padding-top: 2em;
+		.form-group{
+			width: 80%;
+			input{
+				width: 100%;
+			}
+		}
+	}
+}

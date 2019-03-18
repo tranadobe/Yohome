@@ -304,6 +304,14 @@ body.fix_active {
 		height: calc(100% - 100px);
 		overflow-y: scroll;
 		margin:auto;
+		.list-submenu{
+			border-top: 1px solid #D7DCE3;
+			li{
+				a{
+					padding-left: 1em !important;
+				}
+			}
+		}
 		.list_menu{
 			width:90%;			
 			padding:0;

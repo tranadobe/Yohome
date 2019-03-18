@@ -174,6 +174,7 @@ CSS information
 				clear: both;
 				li{
 					float: left;
+					position: relative;
 					a{
 						padding: 15px 30px;
 						color: $white;
@@ -185,6 +186,35 @@ CSS information
 						}
 						@include mq(min_max_w,1280px,1366px) {
 							padding: 15px 15px;
+						}
+					}
+					.list-submenu{
+						position: absolute;
+						left: 0;
+						width: 180px;
+						background:$white;
+						top: 100%;
+						z-index: 9;
+						@include opacity(0);
+						visibility: hidden;
+						@include transition(all .5s ease);
+						li{
+							float: none;
+							a{
+								color: $baseColor;
+								display: block;
+								padding: 7px 15px;
+								border-bottom: 1px solid #DADADA;
+								font-weight: normal;
+							}
+						}
+					}
+					&.has-sub{
+						&:hover{
+							.list-submenu{
+								@include opacity(1);
+								visibility: visible;
+							}
 						}
 					}
 				}
@@ -478,4 +508,13 @@ CSS information
             &:first-child { display: block; }
         }
     }
+}
+
+.page-has-title{
+	text-align: center;
+	@include fsz(40);
+	font-family: $muli;
+	font-weight: bold;
+	color: $white;
+	@include cV(padding,70px 0 60px,50px 0 40px, 30px 0 20px);
 }

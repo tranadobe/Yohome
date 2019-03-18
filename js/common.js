@@ -4,8 +4,37 @@
 
 $(function(){
 
-
-
+	$('.slider-one-item').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		autoplay:true,
+		slidesToShow: 1,
+		adaptiveHeight: false,
+		arrows:false
+	});
+	$('.slider-testimonial').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		autoplay:true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		adaptiveHeight: false,
+		arrows:false,
+		 responsive: [
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        infinite: true,
+		        arrows:false,
+		        dots: true
+		      }
+		    },
+	    ]
+	});
 	// smoothScroll ---------------------------//
 	var	speed = 1000,
 		easing = 'swing',
@@ -100,6 +129,7 @@ $(function(){
 		}
 	});	 
 
+
 	$('.button-advance-search').click(function(){
 		$('.box-advance-inner').slideToggle(200);
 	});
@@ -144,7 +174,7 @@ $(function(){
 				arrows:false
 			});			
 		}
-	});    
+	});    		
 
 });
 

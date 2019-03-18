@@ -31,7 +31,14 @@
                 </div>
                 <div class="main-menu pull-left view_pc">
                     <ul>
-                        <li><a href="#">Mua <i class="fa fa-angle-down"></i></a></li>
+                        <li class="has-sub">
+                            <a href="#">Mua <i class="fa fa-angle-down"></i></a>
+                            <ul class="list-submenu">
+                                <li><a href="">Thuê</a></li>
+                                <li><a href="">Thuê</a></li>
+                                <li><a href="">Thuê</a></li>
+                            </ul>
+                        </li>
                         <li><a href="">Thuê</a></li>
                         <li><a href="">Chủ nhà</a></li>
                         <li><a href="">Công nghệ</a></li>

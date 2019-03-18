@@ -119,6 +119,15 @@ CSS information
     overflow: visible !important;
    }
 }
+.slider-one-item{
+	.slick-dots{
+		@include dots($text-primary,#EEEEEE,10px,center); // or default mixin dots();
+		@include cV(bottom,-4em !important,-4em !important,-2em !important);
+	}	
+   .slick-list{
+    padding: 0!important;
+   }	
+}
 .list-donghanhcungban{
 	@include clearfix;
 	li{
@@ -185,4 +194,109 @@ CSS information
 			}
 		}
 	}
+}
+
+.box-thongtincapnhat{
+	@include clearfix;
+	background:transparent url('../images/dangkytuvan/bg_thongtin.jpg') center center no-repeat;
+	background-size: cover;
+	.container{
+		@include cV(min-height, 600px,500px,400px);
+		position: relative;
+		@include cV(padding, 87.5px 0,50px 0,40px 0);
+	}
+	.box-text-slider{
+		@include border-radius(50%);
+		@include cV(width,425px,425px,320px);
+		@include cV(height,425px,425px,320px);
+		background:$white;
+		margin: auto;
+		position: relative;
+	}
+	.box-slider{
+		position: absolute;
+		left: 50%;
+		top: 60%;
+		@include transform(translate(-50%,-60%));
+		@include cV(width,70%,70%,80%);
+		max-width: 400px;
+		text-align: center;
+		@include clearfix;
+		@include cV(padding-bottom,4em,3em,2em);
+		.item{
+			outline: none;
+			h4{
+				@include fsz(24);
+				font-weight: bold;
+				margin-bottom: 17px;
+				font-family: $muli;
+				@include mq(sp) {
+					@include fsz(20);
+				}
+			}
+			.text-desc{
+				line-height: 1.6;
+				font-weight: 300;
+				@include mq(sp) {
+					font-size: 90%;
+				}
+			}
+		}
+	}
+}
+.box-search-dichvu{
+	@include clearfix;
+	background:transparent url('../images/dangkytuvan/bg_form.png') right top no-repeat;
+	background-size: cover;
+	margin: 80px auto;
+	.box-search-inner{
+		@include cV(padding,55px 150px,30px 0,30px 0 20px);
+	}
+	.block-button{
+		@include mq(sp) {
+			text-align: center;
+		}
+	}
+}
+
+.box-khachhang{
+	@include clearfix;
+	margin-bottom: 70px;
+	.list-testimonial{
+		@include clearfix;
+		padding-bottom: 4em;
+		.item-testimonial{
+			outline: none;
+			@include cV(margin-right,30px,10px,0);
+			.test-inner{
+				@include border-radius(3px);
+				border:1px solid #D7DCE3;
+				padding:30px;
+				background:transparent url('../images/dangkytuvan/right-quote-sign.png') calc(100% - 30px) 35px no-repeat;
+			}
+			.test-header{
+				@include clearfix;
+				margin-bottom: 15px;
+				img{
+					float: left;
+					vertical-align: middle;
+				}
+				.test-header{
+					width: calc(100% - 70px);
+					float: right;
+					vertical-align: middle;
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+}
+.slider-testimonial{
+	.slick-dots{
+		@include dots($text-primary,#EEEEEE,10px,center); // or default mixin dots();
+		@include cV(bottom,0 !important,0 !important,0 !important);
+	}	
+   .slick-list{
+    padding: 0!important;
+   }
 }

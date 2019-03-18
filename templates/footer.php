@@ -126,7 +126,14 @@
         </ul>		
 		<div class="box_menu">
 			<ul class="list_menu">
-                <li><a href="#">Mua</a></li>
+				<li class="has-sub">
+                    <a href="#">Mua <i class="fa fa-angle-down"></i></a>
+                    <ul class="list-submenu">
+                        <li><a href="">Thuê</a></li>
+                        <li><a href="">Thuê</a></li>
+                        <li><a href="">Thuê</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Thuê</a></li>
                 <li><a href="">Chủ nhà</a></li>
                 <li><a href="">Công nghệ</a></li>

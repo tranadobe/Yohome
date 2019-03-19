@@ -527,6 +527,7 @@ CSS information
 	-o-border-radius: 0;
 	border-radius: 0;
 	border: none;
+	margin-bottom: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -684,6 +685,11 @@ CSS information
 
 .ie8 #header .container-fluid {
 	padding: 0 40px;
+}
+
+#header .header-main {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1394,6 +1400,25 @@ CSS information
 	.page-has-title {
 		padding: 30px 0 20px;
 	}
+}
+
+#account-page #header {
+	padding-bottom: 0;
+}
+
+#account-page #header .header-main {
+	padding-bottom: 0;
+}
+
+#account-page #header .header-main .main-menu ul li a {
+	padding: 35px 30px 30px;
+	text-transform: uppercase;
+	margin-top: -20px;
+}
+
+#account-page #header .header-main .main-menu ul li a.active {
+	background: #FFF;
+	color: #0999D8;
 }
 
 /* ===================================================================
@@ -6676,6 +6701,243 @@ CSS information
 
 .slider-testimonial .slick-list {
 	padding: 0 !important;
+}
+
+/* ===================================================================
+CSS information
+ file name  : base.css
+ author     : Le Duc Anh
+ website : mauthietke.info
+=================================================================== */
+.box-menu-account {
+	overflow: hidden;
+	*zoom: 1;
+	border-bottom: 1px solid #D3D9E1;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-menu-account {
+		overflow-x: scroll;
+	}
+}
+
+.box-menu-account ul {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-menu-account ul {
+		min-width: 740px;
+	}
+}
+
+.box-menu-account ul li {
+	float: left;
+	padding: 0 20px;
+}
+
+.box-menu-account ul li a {
+	display: block;
+	padding: 10px 0 20px;
+	text-transform: uppercase;
+	font-family: "Muli", sans-serif;
+	color: #1D2C4C;
+	position: relative;
+	font-weight: bold;
+}
+
+.box-menu-account ul li a:before {
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #0999D8;
+	position: absolute;
+	left: 0;
+	-webkit-transform: scale(0, 0);
+	-moz-transform: scale(0, 0);
+	-ms-transform: scale(0, 0);
+	-o-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	bottom: 15px;
+}
+
+.box-menu-account ul li a.active, .box-menu-account ul li a:hover {
+	color: #0999D8;
+}
+
+.box-menu-account ul li a.active:before, .box-menu-account ul li a:hover:before {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	bottom: 15px;
+}
+
+.box-news-managerment .table th {
+	background: #F5F8FB;
+	border-color: #D3D9E1;
+	border-bottom: none;
+	padding: 20px 10px;
+	line-height: 2;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.box-news-managerment .table td {
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.box-news-managerment .table td.news-item {
+	text-align: left;
+	width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+	.box-news-managerment .table td.news-item {
+		white-space: normal;
+	}
+}
+
+.box-news-managerment .btn-primary {
+	border: 1px solid #0999D8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	color: #0999D8;
+	background: none;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.box-news-managerment .btn-border {
+	border: 1px solid #1D2C4C;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	color: #1D2C4C;
+	background: none;
+	display: block;
+	width: 100%;
+}
+
+.list-my-bds {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.list-my-bds {
+		width: 400px;
+	}
+}
+
+.list-my-bds li {
+	overflow: hidden;
+	*zoom: 1;
+	background: #FFF;
+}
+
+.list-my-bds li .img {
+	width: 140px;
+	float: left;
+}
+
+@media only screen and (max-width: 767px) {
+	.list-my-bds li .img {
+		width: 100px;
+	}
+	.list-my-bds li .img img {
+		width: 100%;
+	}
+}
+
+.list-my-bds li .box-content {
+	width: calc(100% - 155px);
+	float: right;
+}
+
+@media only screen and (max-width: 767px) {
+	.list-my-bds li .box-content {
+		width: calc(100% - 110px);
+	}
+}
+
+.list-my-bds li h4 {
+	font-size: 100%;
+	font-family: "Muli", sans-serif;
+	font-weight: bold;
+}
+
+.list-my-bds li h4 a {
+	color: #1D2C4C;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.list-my-bds li .img {
+	position: relative;
+}
+
+.list-my-bds li .lbl-edit {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	background: rgba(29, 44, 76, 0.8);
+	z-index: 1;
+	color: #FFF;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.list-my-bds li .lbl-edit a {
+	color: #FFF;
+	display: block;
+}
+
+.list-my-bds li .list-ul {
+	overflow: hidden;
+	*zoom: 1;
+	margin: 15px 0;
+}
+
+.list-my-bds li .list-ul li {
+	width: 33.33333%;
+	margin-right: 0;
+	float: left;
+}
+
+.list-my-bds li .list-ul li:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+.list-my-bds li .loaibds {
+	font-size: 86%;
+	color: #747C87;
+}
+
+.list-my-bds li .loaibds strong {
+	color: #1D2C4C;
+}
+
+.list-my-bds li .loaibds span {
+	margin-left: 10px;
+	display: inline-block;
 }
 
 /*# sourceMappingURL=../maps/styles.css.map */

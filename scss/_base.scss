@@ -121,6 +121,9 @@ select.form-control{
 		background: none;
 	}	
 }
+#page{
+	@include clearfix;
+}
 .form-control{
 	border: 1px solid #D7DCE3;     
 }

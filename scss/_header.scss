@@ -282,9 +282,9 @@ CSS information
 				.main-menu ul li a{
 					color: $clr-text-menu;
 				}
-				.btn-link-vip li button.btn-default{
-					border-color: $clr-text-menu;
-					color: $clr-text-menu;
+				.btn-link-vip li .btn-default{
+					border-color: $clr-text-menu !important;
+					color: $clr-text-menu !important;
 				}
 				.logo{
 					.logo-main{

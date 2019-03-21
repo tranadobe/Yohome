@@ -214,7 +214,51 @@
 				</ul>
 				<div class="btn-view-more text-right"><a href="#">Xem thêm</a></div>
 			</div>
-			<div class="box-banner"><a href="#"><img src="images/banner_3.png" alt=""></a></div>
+						<div class="box-banner-youhome">
+				<h3>Đơn giản hơn với YouHomes</h3>
+				<ul class="list-giaiphap slider-one">
+					<li>
+						<div class="box-icon"><span><img src="images/icon-search.png" alt=""></span></div>
+						<h4>Tìm kiếm và<br>chọn lọc</h4>
+						<div class="txt-desc">
+							<p>Danh sách được xác minh bởi chuyên gia You Homes</p>
+							<button type="button" class="btn btn-default">Liên lạc</button>
+						</div>
+					</li>
+					<li>
+						<div class="box-icon"><span><img src="images/ic-appointment.png" alt="Đặt lịch xem nhà"></span></div>
+						<h4>Đặt lịch xem nhà</h4>
+						<div class="txt-desc">
+							<p>Chuyên viên You Homes đưa bạn xem căn hộ thực tế cùng chủ nhà</p>
+							<button type="button" class="btn btn-default">Đặt lịch hẹn</button>
+						</div>
+					</li>
+					<li>
+						<div class="box-icon"><span><img src="images/ic-pay.png" alt=""></span></div>
+						<h4>Hỗ trợ vay<br>mua nhà</h4>
+						<div class="txt-desc">
+							<p>Thuận lợi vay mua nhà qua hệ thống ngân hàng liên kết với YouHomes</p>
+							<button type="button" class="btn btn-default">Vay mua nhà</button>
+						</div>
+					</li>
+					<li>
+						<div class="box-icon"><span><img src="images/ic-libra.png" alt=""></span></div>
+						<h4>Tư vấn pháp lý</h4>
+						<div class="txt-desc">
+							<p>Chuyên tư vấn pháp lý của YouHomes đồng hành cùng bạn</p>
+							<button type="button" class="btn btn-default">Liên lạc</button>
+						</div>
+					</li>
+					<li>
+						<div class="box-icon"><span><img src="images/ic-transfer.png" alt=""></span></div>
+						<h4>Hoàn tất thủ tục<br>chuyển nhượng</h4>
+						<div class="txt-desc">
+							<p>Chuyên viên YouHomes hoàn thiện đầy đủ thủ tục chuyển nhượng tới lúc nhận nhà</p>
+							<button type="button" class="btn btn-default">Liên lạc</button>
+						</div>
+					</li>
+				</ul>
+			</div>
 			<div class="box-project-favorite">
 				<h2 class="title-page">Dự án có chủ đầu tư uy tín nhất</h2>
 				<ul class="list-project-favorite">

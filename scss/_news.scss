@@ -26,7 +26,13 @@ CSS information
 				@include background(linear-gradient(180deg, rgba(18, 113, 176, 0.0001) 0%, rgba(0, 0, 0, 0.788695) 100%));
 				bottom: 0;
 				left: 0;
-			}			
+			}	
+			&:hover{
+				h5,.news-date{
+					color: $text-primary;
+					@include transition(all .4s ease);
+				}
+			}		
 		}
 		.box-title-news{
 			position: absolute;
@@ -67,11 +73,18 @@ CSS information
 					.news-date{
 						@include fsz(14);
 						font-weight: 300;
+						@include transition(all .4s ease);
 					}
 					h5{
 						@include fsz(16);
 						line-height: 1.6;
+						@include transition(all .4s ease);
 					}					
+				}
+				&:hover {
+					h5,.news-date{
+						color: $text-primary;
+					}
 				}
 			}
 		}

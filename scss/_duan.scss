@@ -1026,3 +1026,131 @@ CSS information
 		}
 	}
 }
+.box-banner-youhome{
+	@include clearfix;
+	background:transparent url('../images/bg-phaply.png') center top no-repeat;
+	min-height: 472px;
+	background-size: cover;
+	position: relative;
+	padding: 50px;
+	z-index: 0;
+	margin: 30px auto;
+	@include mq(sp) {
+		padding:30px 20px;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background:rgba($navatop, .9);
+	}
+	h3{
+		text-align: center;
+		color: $white;
+		font-weight: normal;
+		@include fsz(32);
+		font-family: $muli;
+		margin-bottom: 40px;
+		@include mq(sp) {
+			@include fsz(28);
+		}
+	}
+	.list-giaiphap{
+		@include clearfix;
+		li{
+			@include grid_col(5,3%,0);
+			color: $white;
+			text-align-last: center;
+			position: relative;
+			@include mq(pc_tab) {
+				&:before{
+					content: "";
+					width: 80px;
+					height: 1px;
+					background:$white;
+					position: absolute;
+					right: -50px;
+					top: 50px;
+				}
+				&:last-child {
+					&:before{
+						display: none;
+					}
+				}
+			}
+			.box-icon{
+				width: 100px;
+				height: 100px;
+				display: inline-block;
+				margin: auto;
+				border:1px solid $white;
+				@include border-radius(50%);
+				text-align: center;
+				position: relative;
+				@include transition(all .4s ease);
+				span{
+					position: absolute;
+					left: 50%;
+					margin-left: -18px;
+					top: 50%;
+					margin-top: -18px;
+					display: inline-block;
+					z-index: 1;
+				}
+			}
+			h4{
+				font-family: $muli;
+				font-weight: normal;
+				@include fsz(18);
+				margin: 15px 0;
+				min-height: 40px;
+			}
+			.txt-desc{
+				@include transition(all .4s ease);
+				@include mq(pc_tab) {
+					@include opacity(0);
+					visibility: hidden;
+				}
+				p{
+					font-weight: 300;
+					min-height: 70px;
+				}
+			}
+			.btn-default{
+				margin-top: 15px;
+				border-color: $white;
+				color: $white;
+				padding:6px 20px;
+				font-weight: 300;
+			}
+
+			&:hover,&:first-child{
+				cursor: pointer;
+				@include mq(pc_tab) {
+					.txt-desc{
+						@include opacity(1);
+						visibility: visible;	
+					}
+				}
+				.box-icon{
+					background:#EE3817;
+					border-color: #EE3817;
+				}
+			}
+			@include mq(sp) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+	.slider-one{
+		padding-bottom: 3em;
+		.slick-dots{
+			bottom: 0;
+		}
+	}
+}

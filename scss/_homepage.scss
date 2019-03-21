@@ -8,6 +8,7 @@ CSS information
 .box-infomation{
 	padding: 35px 0;
 	.item{
+		text-align: center;
 		@include mq(sp) {
 			margin-bottom: 1em;
 			padding: 1em;
@@ -16,7 +17,7 @@ CSS information
 		img{
 			display: inline-block;
 			vertical-align: middle;
-			@include cV(margin-right,1em,.5px,.5em);
+			@include cV(margin-right,1em,10px,.7em);
 		}
 		span{
 			display: inline-block;
@@ -24,6 +25,7 @@ CSS information
 			font-family: $muli;
 			@include fsz(16);
 			font-weight: bold;
+			text-align: left;
 			@include mq(tab) {
 				@include fsz(12);
 			}
@@ -208,6 +210,7 @@ CSS information
 					border-color: #0095D6;
 					position: relative;
 					color: $white;
+					@include transition(all .5s ease);
 					@include mq(pc_tab) {
 						margin-top: -40px;
 						margin-bottom: -40px;
@@ -217,6 +220,17 @@ CSS information
 				}
 				h4{
 					color: $white;
+				}
+				&:hover {
+					.item-inner{
+						cursor: pointer;
+						@include mq(pc_tab) {
+							margin-top: -50px;
+							margin-bottom: -50px;
+							height: calc(100% + 100px);
+							padding: 80px 20px 100px;
+						}
+					} 
 				}
 			}
 		}
@@ -243,6 +257,7 @@ CSS information
 		height: 100%;
 		left: 0;
 		bottom: 0;
+		@include transition(all .5s ease);
 	}
 	.container{
 		position: relative;
@@ -263,7 +278,7 @@ CSS information
 			color: $white;
 			line-height: 2.1;
 			font-family: $muli;
-			font-weight: 300;
+			font-weight: 700;
 			@include mq(sp) {
 				@include fsz(14);
 			}
@@ -278,6 +293,12 @@ CSS information
 					@include fsz(14);
 				}
 			}
+		}
+	}
+	&:hover{
+		cursor: pointer;
+		&:before{
+			background: rgba(#000,.8);
 		}
 	}
 }

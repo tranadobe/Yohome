@@ -127,14 +127,21 @@
 		<div class="box_menu">
 			<ul class="list_menu">
 				<li class="has-sub">
-                    <a href="#">Mua <i class="fa fa-angle-down"></i></a>
+                    <a href="javascrip:void(0)" class="accodion">Mua <i class="fa fa-angle-down"></i></a>
                     <ul class="list-submenu">
                         <li><a href="">Thuê</a></li>
                         <li><a href="">Thuê</a></li>
                         <li><a href="">Thuê</a></li>
                     </ul>
                 </li>
-                <li><a href="">Thuê</a></li>
+				<li class="has-sub">
+                    <a href="javascrip:void(0)" class="accodion">Thuê <i class="fa fa-angle-down"></i></a>
+                    <ul class="list-submenu">
+                        <li><a href="">Thuê</a></li>
+                        <li><a href="">Thuê</a></li>
+                        <li><a href="">Thuê</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Chủ nhà</a></li>
                 <li><a href="">Công nghệ</a></li>
                 <li><a href="">Dịch vụ</a></li>

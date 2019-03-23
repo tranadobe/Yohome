@@ -1835,6 +1835,7 @@ body.fix_active #page {
 
 .fixmenu .box_menu .list-submenu {
 	border-top: 1px solid #D7DCE3;
+	display: none;
 }
 
 .fixmenu .box_menu .list-submenu li a {
